@@ -1,7 +1,8 @@
 # Stories to Design Health
 
-Landingpage, Portfolio und CV von Dominik Schwarz (Stories to Design), veröffentlicht über GitHub Pages.
+Landingpage, Portfolio und CV von Dominik Schwarz (Stories to Design), veröffentlicht über IONOS Deploy Now.
 
-- Live: https://k100.info (GitHub Pages: https://dominik-schwarz.github.io/landingpage-health/)
-- Einstieg: `start.html` (die `index.html` leitet dorthin weiter)
-- Weitere Seiten: `portfolio.html`, `cv.html`
+- Live: https://k100.info/health/
+- Alle Dateien der Webseite liegen im Ordner `health/`. Einstieg ist `health/start.html` (`health/index.html` leitet dorthin weiter).
+- Weitere Seiten: `health/portfolio.html`, `health/cv.html`
+- Die `index.html` im Hauptverzeichnis leitet auf `health/` weiter.

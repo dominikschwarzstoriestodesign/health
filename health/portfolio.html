@@ -287,6 +287,14 @@ class Component extends DCLogic {
   componentDidUpdate() { this.applyTweaks(); }
   componentDidMount() {
     this.applyTweaks();
+    this.jumpHash = () => {
+      const h = decodeURIComponent((location.hash || '').slice(1)); if (!h) return;
+      const el = document.getElementById(h); if (!el) return;
+      const y = el.getBoundingClientRect().top + scrollY - 84;
+      if (Math.abs(scrollY - y) > 4) window.scrollTo({ top: y, behavior: 'auto' });
+    };
+    [60, 400, 1000, 2000].forEach(t => setTimeout(this.jumpHash, t));
+    addEventListener('hashchange', this.jumpHash);
     this.seAuto = setInterval(() => { const now = Date.now(); if (!this.seMagT || now - this.seMagT > 8000) this.seStep(1, this.seMag); if (!this.seSlT || now - this.seSlT > 8000) this.seStep(1, this.seSlider); }, 3500);
     this.playVids = () => document.querySelectorAll('video').forEach(v => {
       v.muted = true; v.defaultMuted = true; v.loop = true; v.autoplay = true; v.playsInline = true;

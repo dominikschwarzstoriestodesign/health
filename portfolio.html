@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#111"/><text x="50" y="62" font-family="Helvetica,Arial,sans-serif" font-size="30" font-weight="700" fill="#fff" text-anchor="middle">DS</text></svg></template>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Portfolio – Dominik Schwarz – Stories to Design</title>
+<script src="./image-slot.js"></script>
+<style>
+@font-face{font-family:"Akzidenz Grotesk BE";src:url("assets/fonts/AkzidenzGroteskBE-Regular.otf") format("opentype");font-weight:400;font-display:swap}
+@font-face{font-family:"Akzidenz Grotesk BE";src:url("assets/fonts/AkzidenzGroteskBE-Medium.ttf") format("truetype");font-weight:500;font-display:swap}
+@font-face{font-family:"Akzidenz Grotesk BE";src:url("assets/fonts/AkzidenzGroteskBE-Bold.otf") format("opentype");font-weight:700;font-display:swap}
+html{scroll-behavior:smooth;scroll-padding-top:108px}
+body{margin:0;background:#fff;color:#000;font-family:'Akzidenz Grotesk BE',Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+a{color:#0022ff;text-decoration:none}
+a:hover{color:#0022ff;text-decoration:underline}
+</style>
+<style>[data-burger]>summary{list-style:none}[data-burger]>summary::-webkit-details-marker{display:none}[data-burger] [data-bl]{display:block;width:22px;height:2px;background:#fff;transition:transform .25s,opacity .2s}[data-burger][open] [data-bl]:nth-child(1){transform:translateY(7px) rotate(45deg)}[data-burger][open] [data-bl]:nth-child(2){opacity:0}[data-burger][open] [data-bl]:nth-child(3){transform:translateY(-7px) rotate(-45deg)}</style>
+<script>document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('[data-burger] nav a');if(a){var d=a.closest('details');if(d)d.open=false}})</script>
+<style data-tweaks="farbmodus">
+:root[data-theme="dunkel"]{color-scheme:dark}
+:root[data-theme="dunkel"] body{background:#111;color:#ededed}
+:root[data-theme="dunkel"] :is([style*="background:#edff71"],[style*="background: rgb(237, 255, 113)"],[style*="background:#d7fafe"],[style*="background: rgb(215, 250, 254)"],[style*="background:#f2f2f2"],[style*="background: rgb(242, 242, 242)"],[style*="background:#c7c7c7"],[style*="background: rgb(199, 199, 199)"],[style*="background:#c7c7cc"],[style*="background: rgb(199, 199, 204)"],[style*="background:#fff"][style*="border-radius:999px"],[style*="background:#fff"][style*="border-radius: 999px"],[style*="background:#fff"][style*="border-radius:8px"],[style*="background:#fff"][style*="border-radius: 8px"],[style*="background: rgb(255, 255, 255)"][style*="border-radius:999px"],[style*="background: rgb(255, 255, 255)"][style*="border-radius: 999px"],[style*="background: rgb(255, 255, 255)"][style*="border-radius:8px"],[style*="background: rgb(255, 255, 255)"][style*="border-radius: 8px"]){color:#000}
+:root[data-theme="dunkel"] :is([style*="background:#fff"],[style*="background: rgb(255, 255, 255)"]):not([style*="border-radius:999px"]):not([style*="border-radius: 999px"]):not([style*="border-radius:8px"]):not([style*="border-radius: 8px"]){background:#111!important}
+:root[data-theme="dunkel"] :is([style*="color:#000"],[style*="color: rgb(0, 0, 0)"]):not(:is([style*="background:#edff71"],[style*="background: rgb(237, 255, 113)"],[style*="background:#d7fafe"],[style*="background: rgb(215, 250, 254)"],[style*="background:#f2f2f2"],[style*="background: rgb(242, 242, 242)"],[style*="background:#c7c7c7"],[style*="background: rgb(199, 199, 199)"],[style*="background:#c7c7cc"],[style*="background: rgb(199, 199, 204)"],[style*="background:#fff"][style*="border-radius:999px"],[style*="background:#fff"][style*="border-radius: 999px"],[style*="background:#fff"][style*="border-radius:8px"],[style*="background:#fff"][style*="border-radius: 8px"],[style*="background: rgb(255, 255, 255)"][style*="border-radius:999px"],[style*="background: rgb(255, 255, 255)"][style*="border-radius: 999px"],[style*="background: rgb(255, 255, 255)"][style*="border-radius:8px"],[style*="background: rgb(255, 255, 255)"][style*="border-radius: 8px"])):not(:is([style*="background:#edff71"],[style*="background: rgb(237, 255, 113)"],[style*="background:#d7fafe"],[style*="background: rgb(215, 250, 254)"],[style*="background:#f2f2f2"],[style*="background: rgb(242, 242, 242)"],[style*="background:#c7c7c7"],[style*="background: rgb(199, 199, 199)"],[style*="background:#c7c7cc"],[style*="background: rgb(199, 199, 204)"],[style*="background:#fff"][style*="border-radius:999px"],[style*="background:#fff"][style*="border-radius: 999px"],[style*="background:#fff"][style*="border-radius:8px"],[style*="background:#fff"][style*="border-radius: 8px"],[style*="background: rgb(255, 255, 255)"][style*="border-radius:999px"],[style*="background: rgb(255, 255, 255)"][style*="border-radius: 999px"],[style*="background: rgb(255, 255, 255)"][style*="border-radius:8px"],[style*="background: rgb(255, 255, 255)"][style*="border-radius: 8px"]) *){color:#ededed!important}
+:root[data-theme="dunkel"] :is([style*="solid #000"],[style*="solid rgb(0, 0, 0)"]):not([style*="border-color:#0022ff"]):not([style*="border-color: rgb(0, 34, 255)"]):not(:is([style*="background:#edff71"],[style*="background: rgb(237, 255, 113)"],[style*="background:#d7fafe"],[style*="background: rgb(215, 250, 254)"],[style*="background:#f2f2f2"],[style*="background: rgb(242, 242, 242)"],[style*="background:#c7c7c7"],[style*="background: rgb(199, 199, 199)"],[style*="background:#c7c7cc"],[style*="background: rgb(199, 199, 204)"],[style*="background:#fff"][style*="border-radius:999px"],[style*="background:#fff"][style*="border-radius: 999px"],[style*="background:#fff"][style*="border-radius:8px"],[style*="background:#fff"][style*="border-radius: 8px"],[style*="background: rgb(255, 255, 255)"][style*="border-radius:999px"],[style*="background: rgb(255, 255, 255)"][style*="border-radius: 999px"],[style*="background: rgb(255, 255, 255)"][style*="border-radius:8px"],[style*="background: rgb(255, 255, 255)"][style*="border-radius: 8px"])):not(:is([style*="background:#edff71"],[style*="background: rgb(237, 255, 113)"],[style*="background:#d7fafe"],[style*="background: rgb(215, 250, 254)"],[style*="background:#f2f2f2"],[style*="background: rgb(242, 242, 242)"],[style*="background:#c7c7c7"],[style*="background: rgb(199, 199, 199)"],[style*="background:#c7c7cc"],[style*="background: rgb(199, 199, 204)"],[style*="background:#fff"][style*="border-radius:999px"],[style*="background:#fff"][style*="border-radius: 999px"],[style*="background:#fff"][style*="border-radius:8px"],[style*="background:#fff"][style*="border-radius: 8px"],[style*="background: rgb(255, 255, 255)"][style*="border-radius:999px"],[style*="background: rgb(255, 255, 255)"][style*="border-radius: 999px"],[style*="background: rgb(255, 255, 255)"][style*="border-radius:8px"],[style*="background: rgb(255, 255, 255)"][style*="border-radius: 8px"]) *){border-color:#ededed!important}
+:root[data-theme="dunkel"] :is([style*="color:#0022ff"],[style*="color: rgb(0, 34, 255)"]):not([style*="background:#0022ff"]):not([style*="background: rgb(0, 34, 255)"]):not(:is([style*="background:#edff71"],[style*="background: rgb(237, 255, 113)"],[style*="background:#d7fafe"],[style*="background: rgb(215, 250, 254)"],[style*="background:#f2f2f2"],[style*="background: rgb(242, 242, 242)"],[style*="background:#c7c7c7"],[style*="background: rgb(199, 199, 199)"],[style*="background:#c7c7cc"],[style*="background: rgb(199, 199, 204)"],[style*="background:#fff"][style*="border-radius:999px"],[style*="background:#fff"][style*="border-radius: 999px"],[style*="background:#fff"][style*="border-radius:8px"],[style*="background:#fff"][style*="border-radius: 8px"],[style*="background: rgb(255, 255, 255)"][style*="border-radius:999px"],[style*="background: rgb(255, 255, 255)"][style*="border-radius: 999px"],[style*="background: rgb(255, 255, 255)"][style*="border-radius:8px"],[style*="background: rgb(255, 255, 255)"][style*="border-radius: 8px"])):not(:is([style*="background:#edff71"],[style*="background: rgb(237, 255, 113)"],[style*="background:#d7fafe"],[style*="background: rgb(215, 250, 254)"],[style*="background:#f2f2f2"],[style*="background: rgb(242, 242, 242)"],[style*="background:#c7c7c7"],[style*="background: rgb(199, 199, 199)"],[style*="background:#c7c7cc"],[style*="background: rgb(199, 199, 204)"],[style*="background:#fff"][style*="border-radius:999px"],[style*="background:#fff"][style*="border-radius: 999px"],[style*="background:#fff"][style*="border-radius:8px"],[style*="background:#fff"][style*="border-radius: 8px"],[style*="background: rgb(255, 255, 255)"][style*="border-radius:999px"],[style*="background: rgb(255, 255, 255)"][style*="border-radius: 999px"],[style*="background: rgb(255, 255, 255)"][style*="border-radius:8px"],[style*="background: rgb(255, 255, 255)"][style*="border-radius: 8px"]) *){color:#8c99ff!important}
+:root[data-theme="dunkel"] a:not([style*="color"]):not(:is([style*="background:#edff71"],[style*="background: rgb(237, 255, 113)"],[style*="background:#d7fafe"],[style*="background: rgb(215, 250, 254)"],[style*="background:#f2f2f2"],[style*="background: rgb(242, 242, 242)"],[style*="background:#c7c7c7"],[style*="background: rgb(199, 199, 199)"],[style*="background:#c7c7cc"],[style*="background: rgb(199, 199, 204)"],[style*="background:#fff"][style*="border-radius:999px"],[style*="background:#fff"][style*="border-radius: 999px"],[style*="background:#fff"][style*="border-radius:8px"],[style*="background:#fff"][style*="border-radius: 8px"],[style*="background: rgb(255, 255, 255)"][style*="border-radius:999px"],[style*="background: rgb(255, 255, 255)"][style*="border-radius: 999px"],[style*="background: rgb(255, 255, 255)"][style*="border-radius:8px"],[style*="background: rgb(255, 255, 255)"][style*="border-radius: 8px"])):not(:is([style*="background:#edff71"],[style*="background: rgb(237, 255, 113)"],[style*="background:#d7fafe"],[style*="background: rgb(215, 250, 254)"],[style*="background:#f2f2f2"],[style*="background: rgb(242, 242, 242)"],[style*="background:#c7c7c7"],[style*="background: rgb(199, 199, 199)"],[style*="background:#c7c7cc"],[style*="background: rgb(199, 199, 204)"],[style*="background:#fff"][style*="border-radius:999px"],[style*="background:#fff"][style*="border-radius: 999px"],[style*="background:#fff"][style*="border-radius:8px"],[style*="background:#fff"][style*="border-radius: 8px"],[style*="background: rgb(255, 255, 255)"][style*="border-radius:999px"],[style*="background: rgb(255, 255, 255)"][style*="border-radius: 999px"],[style*="background: rgb(255, 255, 255)"][style*="border-radius:8px"],[style*="background: rgb(255, 255, 255)"][style*="border-radius: 8px"]) *){color:#8c99ff}
+</style>
+</helmet>
+<sc-if value="{{ devFrame }}" hint-placeholder-val="{{ false }}">
+<div data-tweaks="ansicht" style="position:fixed;inset:0;z-index:2147483000;background:#2a2a2a;display:flex;flex-direction:column;align-items:center;gap:12px;padding:16px;overflow:auto">
+  <div style="color:#fff;font:500 13px/1.2 system-ui,sans-serif;letter-spacing:.04em">{{ devLabel }}</div>
+  <iframe src="{{ devSrc }}" title="{{ devLabel }}" style="width:{{ devW }};height:{{ devH }};flex:none;border:0;border-radius:24px;background:#fff;box-shadow:0 10px 40px rgba(0,0,0,.45)"></iframe>
+</div>
+</sc-if>
+<div aria-hidden="true" style="height:60px"></div>
+<header data-screen-label="00 Header" style="position:fixed;top:0;left:0;right:0;z-index:50;background:#000;color:#fff">
+  <div style="max-width:calc(1280px + 2 * clamp(20px,4vw,40px));margin:0 auto;display:flex;align-items:center;gap:24px;padding:12px clamp(20px,4vw,40px);height:60px">
+    <a href="start.html#top" style="display:flex;align-items:center;flex-shrink:0;min-height:44px"><img src="assets/logo-white.svg" alt="Dominik Schwarz – Stories to Design" style="height:28px;width:auto;display:block"></a>
+    <nav style="flex:1;display:flex;justify-content:flex-end;gap:24px;font-size:14px">
+      <sc-if value="{{ wide }}" hint-placeholder-val="{{ true }}">
+        <a href="start.html#ansatz" style="color:#fff" style-hover="color:#edff71;text-decoration:underline;text-underline-offset:.2em">Über mich</a>
+        
+        <a href="start.html#case" style="color:#fff" style-hover="color:#edff71;text-decoration:underline;text-underline-offset:.2em">Cases</a>
+        <a href="portfolio.html" aria-current="page" style="color:#edff71;font-weight:500">Portfolio</a>
+        <a href="cv.html" style="color:#fff" style-hover="color:#edff71;text-decoration:underline;text-underline-offset:.2em">CV</a>
+      </sc-if>
+    </nav>
+    <a href="https://calendly.com/dominikschwarzdesign/30min" style="flex-shrink:0;background:#fff;color:#000;border-radius:999px;padding:12px 18px;font-weight:500;font-size:14px;line-height:1.2;text-decoration:none" style-hover="background:#0022ff;color:#fff">Kontakt</a>
+  <sc-if value="{{ narrow }}" hint-placeholder-val="{{ false }}"><details data-burger="" style="flex-shrink:0;margin-right:-10px"><summary aria-label="Menü" style="cursor:pointer;width:44px;height:44px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px"><span data-bl=""></span><span data-bl=""></span><span data-bl=""></span></summary><nav style="position:fixed;top:60px;left:0;right:0;bottom:0;background:#000;display:flex;flex-direction:column;padding:8px clamp(20px,4vw,40px) 40px;border-top:1px solid #333;overflow-y:auto"><a href="start.html#ansatz" style="color:#fff;text-decoration:none;padding:18px 0;border-bottom:1px solid #333;font-size:clamp(28px,8vw,40px);font-weight:500;letter-spacing:-.02em;text-transform:uppercase;line-height:1" style-hover="color:#edff71;text-decoration:underline;text-underline-offset:.2em">Über mich</a><a href="start.html#case" style="color:#fff;text-decoration:none;padding:18px 0;border-bottom:1px solid #333;font-size:clamp(28px,8vw,40px);font-weight:500;letter-spacing:-.02em;text-transform:uppercase;line-height:1" style-hover="color:#edff71;text-decoration:underline;text-underline-offset:.2em">Cases</a><a href="portfolio.html" aria-current="page" style="color:#edff71;font-weight:500;text-decoration:none;padding:18px 0;border-bottom:1px solid #333;font-size:clamp(28px,8vw,40px);font-weight:500;letter-spacing:-.02em;text-transform:uppercase;line-height:1">Portfolio</a><a href="cv.html" style="color:#fff;text-decoration:none;padding:18px 0;border-bottom:1px solid #333;font-size:clamp(28px,8vw,40px);font-weight:500;letter-spacing:-.02em;text-transform:uppercase;line-height:1" style-hover="color:#edff71;text-decoration:underline;text-underline-offset:.2em">CV</a></nav></details></sc-if>
+  </div>
+  <div data-progress="" style="position:absolute;left:0;bottom:0;height:3px;width:100%;background:#0022ff;transform:scaleX(0);transform-origin:0 50%"></div>
+</header>
+<main lang="de" style="font-size:clamp(15px,1.1vw,17px);line-height:1.45">
+<section data-screen-label="03 Angebot" style="background:#000;color:#fff;padding:clamp(64px,8vw,120px) clamp(20px,4vw,40px)">
+  <div style="max-width:1280px;margin:0 auto;display:flex;flex-direction:column;gap:clamp(40px,5vw,64px)">
+    <div style="display:flex;flex-direction:column;gap:24px">
+      <div style="font-size:13px;text-transform:uppercase;letter-spacing:.08em;font-weight:500">Wie ich arbeite</div>
+      <h2 style="margin:0;font-size:clamp(28px,4.4vw,60px);line-height:.95;hyphens:manual;-webkit-hyphens:manual;overflow-wrap:normal;word-break:keep-all;font-weight:500;letter-spacing:-.015em;text-transform:uppercase;text-wrap:balance">Komplexe Inhalte, einfach und unterhaltsam</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:40px clamp(24px,3vw,48px)">
+      <article style="display:flex;flex-direction:column;gap:16px;border-top:1px solid #fff;padding-top:16px">
+        <span style="font-size:13px;font-weight:500">01</span>
+        <h3 style="margin:0;font-size:clamp(22px,2vw,28px);line-height:1.05;font-weight:700;text-transform:uppercase">Kerngeschichte</h3>
+        <p style="margin:0;font-size:clamp(15px,1.2vw,17px);line-height:1.45;text-wrap:pretty">Ich starte mit KI-unterstützten Marken-Interviews, Value Propositions und dem Brand Thinking Canvas.</p>
+      </article>
+      <article style="display:flex;flex-direction:column;gap:16px;border-top:1px solid #fff;padding-top:16px">
+        <span style="font-size:13px;font-weight:500">02</span>
+        <h3 style="margin:0;font-size:clamp(22px,2vw,28px);line-height:1.05;font-weight:700;text-transform:uppercase">Content-Strategie</h3>
+        <p style="margin:0;font-size:clamp(15px,1.2vw,17px);line-height:1.45;text-wrap:pretty">Ich entwickle Content- und Kanalstrategien und prüfe, welche Abläufe sich automatisieren lassen.</p>
+      </article>
+      <article style="display:flex;flex-direction:column;gap:16px;border-top:1px solid #fff;padding-top:16px">
+        <span style="font-size:13px;font-weight:500">03</span>
+        <h3 style="margin:0;font-size:clamp(22px,2vw,28px);line-height:1.05;font-weight:700;text-transform:uppercase">Designsysteme</h3>
+        <p style="margin:0;font-size:clamp(15px,1.2vw,17px);line-height:1.45;text-wrap:pretty">Aus der Kerngeschichte entwickle ich Identität, Key Visuals und Designsysteme.</p>
+      </article>
+    </div>
+  </div>
+</section>
+<!-- ARCHIV: „So gehe ich vor – Von der Value Proposition zum Designsystem“, ausgeblendet, nicht gelöscht -->
+<section id="methode" data-archived="" data-screen-label="P00b So gehe ich vor" style="display:none;padding:0 clamp(20px,4vw,40px) clamp(128px,16vw,240px)">
+  <div style="max-width:1280px;margin:0 auto;margin-top:clamp(64px,8vw,120px);border-top:1px solid #000;padding-top:20px;display:flex;flex-wrap:wrap;gap:40px clamp(32px,5vw,80px);align-items:flex-start">
+
+    <div style="flex:1 1 280px;display:flex;flex-direction:column;gap:28px">
+      <div style="font-size:13px;text-transform:uppercase;letter-spacing:.08em;font-weight:500">So gehe ich vor</div>
+      
+      
+      <h2 style="margin:0;font-size:clamp(24px,3vw,42px);line-height:.95;hyphens:manual;-webkit-hyphens:manual;overflow-wrap:normal;word-break:keep-all;text-wrap:balance;font-weight:500;letter-spacing:-.015em;text-transform:uppercase">Von der Value Proposition zum Designsystem</h2>
+      
+      
+    </div>
+    <div style="flex:2 1 520px;min-width:0;display:flex;flex-direction:column;gap:clamp(56px,7vw,112px)">
+      <article id="p-core" data-step="p:0" style="display:flex;flex-direction:column;gap:20px">
+        <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(12px,2vw,20px)">
+            <div style="position:relative;aspect-ratio:291/324;background:#0022ff"><img src="img/toolkit-frei.png" alt="THNK Toolkit" style="position:absolute;inset:6%;width:88%;height:88%;object-fit:contain;object-position:50% 50%;display:block"></div>
+      <div style="position:relative;aspect-ratio:291/324"><img src="img/poster.jpg" alt="Brand Thinking Canvas Poster" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 50%;display:block"></div>
+          </div>
+          
+        <div style="display:flex;flex-direction:column;gap:clamp(24px,3vw,40px)">
+          <div style="min-width:0;padding:4px 0">
+            <p style="margin:0 0 16px;font-family:'Larish Neue',Georgia,serif;font-weight:600;font-size:clamp(19px,1.8vw,24px);letter-spacing:-.02em;line-height:1.1;text-wrap:balance">Systematischer Projektaufbau</p>
+            <div style="display:flex;flex-direction:column;border-bottom:1px solid #000"><div style="display:grid;grid-template-columns:minmax(0,1fr);gap:12px;border-top:1px solid #000;padding:14px 0;font-size:clamp(16px,1.3vw,19px);line-height:1.35;text-wrap:pretty"><span><strong style="font-weight:700">Value Proposition + Business Model (Canvas)</strong><br>Bewertungs- und Erfolgskriterien für Projekte</span></div><div style="display:grid;grid-template-columns:minmax(0,1fr);gap:12px;border-top:1px solid #000;padding:14px 0;font-size:clamp(16px,1.3vw,19px);line-height:1.35;text-wrap:pretty"><span><strong style="font-weight:700">Brand Thinking Canvas</strong><br>Markenentwicklung und Netzwerkstrukturen</span></div><div style="display:grid;grid-template-columns:minmax(0,1fr);gap:12px;border-top:1px solid #000;padding:14px 0;font-size:clamp(16px,1.3vw,19px);line-height:1.35;text-wrap:pretty"><span><strong style="font-weight:700">Design-Thinking-Methoden</strong><br>Innovations- und Workshop-Formate</span></div></div>
+          </div>
+          
+          
+        </div>
+      
+        <div style="display:flex;flex-direction:column;gap:12px;margin-top:clamp(24px,3vw,40px)">
+            <span style="font-size:13px;text-transform:uppercase;letter-spacing:.08em;font-weight:500">Methoden + Zertifikate</span>
+            <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(8px,1vw,12px);"><div style="background:#fff;border:1px solid #000;border-radius:8px;aspect-ratio:3/2;display:flex;align-items:center;justify-content:center;padding:12%"><img src="img/logo-thnk.png" alt="THNK School of Creative Leadership" style="max-width:62%;max-height:100%;width:auto;height:auto;display:block"></div><div style="background:#fff;border:1px solid #000;border-radius:8px;aspect-ratio:3/2;display:flex;align-items:center;justify-content:center;padding:12%"><img src="img/logo-brandthechange.png" alt="BrandTheChange" style="max-width:80%;max-height:100%;width:auto;height:auto;display:block"></div><div style="background:#fff;border:1px solid #000;border-radius:8px;aspect-ratio:3/2;display:flex;align-items:center;justify-content:center;padding:12%"><img src="img/logo-ideou.png" alt="IDEO U" style="max-width:66%;max-height:100%;width:auto;height:auto;display:block"></div></div>
+          </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+<!-- ARCHIV: Button „Lassen Sie uns sprechen“ unter Designsysteme, ausgeblendet: <div style="display:flex;justify-content:center;padding:clamp(16px,2vw,32px) clamp(20px,4vw,40px) 0"><a href="mailto:ds@dominikschwarz.eu?subject=Einladung%20zum%20Gespr%C3%A4ch" style="white-space:nowrap;display:flex;align-items:center;gap:10px;background:#000;color:#fff;border:2px solid #000;border-radius:999px;padding:12px 22px;font-weight:500;text-decoration:none" style-hover="background:#0022ff;border-color:#0022ff;color:#fff;text-decoration:none" style-active="background:#0022ff;border-color:#0022ff;color:#fff;text-decoration:none" onMouseEnter="{{ smileOn1 }}" onMouseLeave="{{ smileOff1 }}">→ Lassen Sie uns sprechen&nbsp;{{ smile1 }}</a></div> -->
+<section id="projekte" data-screen-label="P01 Projekte" style="padding:clamp(48px,7vw,96px) clamp(20px,4vw,40px) clamp(64px,8vw,120px)">
+  <div style="max-width:1280px;margin:0 auto;border-top:1px solid #000;padding-top:20px;display:flex;flex-wrap:wrap;gap:40px clamp(32px,5vw,80px);align-items:flex-start">
+    <div style="flex:1 1 280px;position:{{ stickyPos }};top:84px;display:flex;flex-direction:column;gap:28px">
+      <div style="font-size:13px;text-transform:uppercase;letter-spacing:.08em;font-weight:500">Portfolio</div>
+      <h2 style="margin:0;font-size:clamp(28px,4.4vw,60px);line-height:.95;hyphens:manual;-webkit-hyphens:manual;overflow-wrap:normal;word-break:keep-all;font-weight:500;letter-spacing:-.015em;text-transform:uppercase;text-wrap:balance">Projekte</h2>
+      <nav style="display:flex;flex-direction:column;border-top:1px solid #000;font-size:14px">
+        <a href="#siemens-robotics" style="color:#000;display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid #000;font-size:14px;font-weight:500;text-transform:uppercase;text-decoration:none" style-hover="color:#0022ff;text-decoration:none"><span style="width:10px;height:10px;border-radius:50%;background:#000;flex:0 0 auto"></span>Siemens Healthineers · Robotics</a>
+        <a href="#aok-podcast" style="color:#000;display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid #000;font-size:14px;font-weight:500;text-transform:uppercase;text-decoration:none" style-hover="color:#0022ff;text-decoration:none"><span style="width:10px;height:10px;border-radius:50%;background:#000;flex:0 0 auto"></span>AOK · Medizin und Gesundheit</a>
+        <a href="#wortbild-volkskrankheiten" style="color:#000;display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid #000;font-size:14px;font-weight:500;text-transform:uppercase;text-decoration:none" style-hover="color:#0022ff;text-decoration:none"><span style="width:10px;height:10px;border-radius:50%;background:#000;flex:0 0 auto"></span>Wort &amp; Bild Verlag · Buchprogramm</a>
+        
+        <!-- ARCHIV: <a href="#algesiologikum" style="color:#000;display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid #000;font-size:14px;font-weight:500;text-transform:uppercase;text-decoration:none" style-hover="color:#0022ff;text-decoration:none"><span style="width:10px;height:10px;border-radius:50%;background:#000;flex:0 0 auto"></span>Algesiologikum · Schmerztherapie</a> -->
+        <a href="#be-healthy" style="color:#000;display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid #000;font-size:14px;font-weight:500;text-transform:uppercase;text-decoration:none" style-hover="color:#0022ff;text-decoration:none"><span style="width:10px;height:10px;border-radius:50%;background:#000;flex:0 0 auto"></span>be healthy · Gesundheit + Lifestyle</a>
+        <!-- ARCHIV: <a href="#siemens-roentgen" style="color:#000;display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid #000;font-size:14px;font-weight:500;text-transform:uppercase;text-decoration:none" style-hover="color:#0022ff;text-decoration:none"><span style="width:10px;height:10px;border-radius:50%;background:#000;flex:0 0 auto"></span>Siemens Healthineers · Röntgen</a> -->
+        <a href="#siemens-energy" style="color:#000;display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid #000;font-size:14px;font-weight:500;text-transform:uppercase;text-decoration:none" style-hover="color:#0022ff;text-decoration:none"><span style="width:10px;height:10px;border-radius:50%;background:#000;flex:0 0 auto"></span>Siemens Energy · Digital Storytelling</a>
+        <a href="#fit-vital-plus" style="color:#000;display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid #000;font-size:14px;font-weight:500;text-transform:uppercase;text-decoration:none" style-hover="color:#0022ff;text-decoration:none"><span style="width:10px;height:10px;border-radius:50%;background:#000;flex:0 0 auto"></span>fit &amp; vital plus · Gesundheitsdienstleistungen</a>
+      </nav>
+    </div>
+    <div style="flex:2 1 520px;min-width:0;display:flex;flex-direction:column;gap:clamp(56px,7vw,112px)">
+      <article id="siemens-robotics" data-screen-label="Siemens Healthineers" style="display:flex;flex-direction:column;gap:16px;scroll-margin-top:84px">
+        <div style="font-size:13px;text-transform:uppercase;letter-spacing:.08em;font-weight:500">Digitale Storytelling-Serie</div>
+        <h3 style="margin:0;font-size:21px;font-weight:500;text-transform:uppercase">Siemens Healthineers<span style="display:block;margin-top:4px;font-size:clamp(17px,1.5vw,20px);text-transform:none">Robotics</span></h3>
+        <div style="min-width:0;margin-top:8px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(8px,1.2vw,16px)">
+      <figure style="grid-column:1 / -1;margin:0;display:flex;flex-direction:column;gap:6px"><div style="position:relative;aspect-ratio:3/2;background:#f2f2f2;overflow:hidden"><img src="img-web/img/healthineers8.webp" alt="Siemens Healthineers Robotics – Illustration: Mensch und Maschine" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div><figcaption style="font-size:13px;color:#6b6b6b">Bildanschnitte + Style Guide</figcaption></figure>
+    
+        
+        <figure style="margin:0;display:flex;flex-direction:column;gap:6px"><div style="position:relative;aspect-ratio:3/2;background:#000;overflow:hidden"><video autoplay="{{ true }}" muted="{{ true }}" loop="{{ true }}" playsinline="{{ true }}" src="uploads/Laptop2_v2-3ef1be93.mp4" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></video></div></figure>
+        <figure style="margin:0;display:flex;flex-direction:column;gap:6px"><div style="position:relative;aspect-ratio:3/2;background:#000;overflow:hidden"><video autoplay="{{ true }}" muted="{{ true }}" loop="{{ true }}" playsinline="{{ true }}" src="uploads/Smartphone_v2.mp4" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></video></div></figure>
+        <figure style="margin:0;display:flex;flex-direction:column;gap:6px"><div style="position:relative;aspect-ratio:3/2;background:#f2f2f2;overflow:hidden"><img src="img-web/img/healthineers7.webp" alt="Bildanschnitte der Illustration für 16:9, 4:3 und Square" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div></figure>
+        <figure style="margin:0;display:flex;flex-direction:column;gap:6px"><div style="position:relative;aspect-ratio:3/2;background:#f2f2f2;overflow:hidden"><img src="img-web/img/healthineers6.webp" alt="Style Guide: 3D-Elemente, Linienelemente, Mesh-Objekte und fotografische Elemente" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div></figure>
+    </div>
+      </article>
+      <article id="aok-podcast" data-screen-label="AOK" style="display:flex;flex-direction:column;gap:16px;scroll-margin-top:84px">
+        <div style="font-size:13px;text-transform:uppercase;letter-spacing:.08em;font-weight:500">Podcast</div>
+        <h3 style="margin:0;font-size:21px;font-weight:500;text-transform:uppercase">AOK<span style="display:block;margin-top:4px;font-size:clamp(17px,1.5vw,20px);text-transform:none">Medizin und Gesundheit</span></h3>
+        <div style="min-width:0;margin-top:8px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(8px,1.2vw,16px)">
+      <div style="grid-column:1 / -1;position:relative;aspect-ratio:3/2;background:#000"><img src="img/aok.jpg" alt="AOK – Podcast Auf Herz &amp; Ohren mit Doc Caro" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 100%;display:block"></div>
+        <figure style="margin:0"><div style="position:relative;aspect-ratio:16/9;background:#000;overflow:hidden"><video autoplay="{{ true }}" muted="{{ true }}" loop="{{ true }}" playsinline="{{ true }}" src="uploads/aok-podcast-1.mp4" poster="uploads/aok-podcast-1-web.jpg" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></video></div></figure>
+        <figure style="margin:0"><div style="position:relative;aspect-ratio:16/9;background:#000;overflow:hidden"><video autoplay="{{ true }}" muted="{{ true }}" loop="{{ true }}" playsinline="{{ true }}" src="uploads/aok-podcast-2.mp4" poster="uploads/aok-podcast-2-web.jpg" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></video></div></figure>
+    
+        <figure style="margin:0;display:flex;flex-direction:column;gap:6px"><div style="position:relative;aspect-ratio:1250/916;background:#000;overflow:hidden"><img src="uploads/295-web.jpg" alt="AOK Podcast und Handbuch" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div></figure>
+        <figure style="margin:0;display:flex;flex-direction:column;gap:6px"><div style="position:relative;aspect-ratio:1250/916;background:#000;overflow:hidden"><img src="uploads/296-web.jpg" alt="AOK Podcast und Handbuch" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div></figure>
+    </div>
+      </article>
+      <article id="wortbild-volkskrankheiten" data-screen-label="Wort & Bild Verlag" style="display:flex;flex-direction:column;gap:16px;scroll-margin-top:84px">
+        <div style="font-size:13px;text-transform:uppercase;letter-spacing:.08em;font-weight:500">Buchreihe</div>
+        <h3 style="margin:0;font-size:21px;font-weight:500;text-transform:uppercase">Wort &amp; Bild Verlag<span style="display:block;margin-top:4px;font-size:clamp(17px,1.5vw,20px);text-transform:none">Buchprogramm</span></h3>
+        <div style="min-width:0;margin-top:8px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(8px,1.2vw,16px)">
+    
+        <figure style="grid-column:1 / -1;margin:0"><div style="position:relative;aspect-ratio:1250/916;background:#f2f2f2;overflow:hidden"><img src="uploads/AU_Buecher_06-web.jpg" alt="Reihe „Die ersten 100 Tage“" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div></figure>
+        <figure style="margin:0"><div style="position:relative;aspect-ratio:938/687;background:#f2f2f2;overflow:hidden"><img src="uploads/64.jpg" alt="Diabetes Typ 2 – Kapitelauftakt" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div></figure>
+        <figure style="margin:0"><div style="position:relative;aspect-ratio:938/687;background:#f2f2f2;overflow:hidden"><img src="uploads/65.jpg" alt="Bluthochdruck – Blutdruckregelung" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div></figure>
+        <figure style="margin:0"><div style="position:relative;aspect-ratio:1250/916;background:#f2f2f2;overflow:hidden"><img src="uploads/AU_Buecher_02-web.jpg" alt="Blutzucker in Balance – Cover" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div></figure>
+        <figure style="margin:0"><div style="position:relative;aspect-ratio:1250/916;background:#f2f2f2;overflow:hidden"><img src="uploads/AU_Buecher_03-web.jpg" alt="Blutzucker in Balance – Infografik Insulin" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div></figure>
+        <figure style="margin:0"><div style="position:relative;aspect-ratio:1250/916;background:#f2f2f2;overflow:hidden"><img src="uploads/AU_Buecher_04-web.jpg" alt="Blutzucker in Balance – Rezeptkapitel" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div></figure>
+        <figure style="margin:0"><div style="position:relative;aspect-ratio:1250/916;background:#f2f2f2;overflow:hidden"><img src="uploads/AU_Buecher_05-web.jpg" alt="Blutzucker in Balance – Rezept" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div></figure>
+        <figure style="margin:0"><div style="position:relative;aspect-ratio:1200/675;background:#f2f2f2;overflow:hidden"><img src="uploads/36-c94d5d2e.jpg" alt="Umschau Shop – Die Bücher im Überblick" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div></figure>
+      <figure style="margin:0"><div style="position:relative;aspect-ratio:1200/675;background:#f2f2f2;overflow:hidden"><img src="uploads/PORTFOLIO_Projekt_Detail_Layout_AU_Landingpage.jpg" alt="Apotheken Umschau – Landingpage Bücher, Mobile-Ansichten" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div></figure>
+    </div>
+      </article>
+      
+      <!-- ARCHIV: <article id="algesiologikum" data-screen-label="Algesiologikum" style="display:flex;flex-direction:column;gap:16px;scroll-margin-top:84px">
+        <div style="font-size:13px;text-transform:uppercase;letter-spacing:.08em;font-weight:500">Brand Design</div>
+        <h3 style="margin:0;font-size:21px;font-weight:500;text-transform:uppercase">Algesiologikum<span style="display:block;margin-top:4px;font-size:clamp(17px,1.5vw,20px);text-transform:none">Schmerztherapie</span></h3>
+        <div style="min-width:0;margin-top:8px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(8px,1.2vw,16px)">
+      <div style="grid-column:1 / -1;position:relative;aspect-ratio:3/2;background:#000"><video autoplay="{{ true }}" muted="{{ true }}" loop="{{ true }}" playsinline="{{ true }}" src="img/algesiologikum.mp4" poster="img/algesiologikum-poster.png" data-autoloop="" preload="auto" aria-label="Algesiologikum – Logo-Animation" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block;background:#000"></video></div>
+        <figure style="margin:0"><div style="position:relative;aspect-ratio:2376/1568;background:#f2f2f2;overflow:hidden"><img src="uploads/ALG_Documentation_01_Seite_04-web.jpg" alt="Algesiologikum – Visitenkarten" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div></figure>
+        <figure style="margin:0"><div style="position:relative;aspect-ratio:2376/1568;background:#f2f2f2;overflow:hidden"><img src="uploads/ALG_Documentation_01_Seite_08-web.jpg" alt="Algesiologikum – Broschüre Vorwort" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div></figure>
+    </div>
+      </article> -->
+      <article id="be-healthy" data-screen-label="be healthy" style="display:flex;flex-direction:column;gap:16px;scroll-margin-top:84px">
+        <div style="font-size:13px;text-transform:uppercase;letter-spacing:.08em;font-weight:500">Magazin</div>
+        <h3 style="margin:0;font-size:21px;font-weight:500;text-transform:uppercase">be healthy<span style="display:block;margin-top:4px;font-size:clamp(17px,1.5vw,20px);text-transform:none">Gesundheit + Lifestyle</span></h3>
+        <div style="min-width:0;margin-top:8px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(8px,1.2vw,16px)">
+      <div style="grid-column:1 / -1;position:relative;aspect-ratio:3/2;background:#000"><img src="uploads/142.jpg" alt="be healthy! – Ausgabe Winter 2023" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div>
+    
+        <figure style="margin:0"><div style="position:relative;aspect-ratio:938/687;background:#f2f2f2;overflow:hidden"><img src="uploads/214-web.jpg" alt="be healthy! – Titelthema „Träum weiter!“" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div></figure>
+        <figure style="margin:0"><div style="position:relative;aspect-ratio:938/687;background:#f2f2f2;overflow:hidden"><img src="uploads/217-web.jpg" alt="be healthy! – „Kopf aus“" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div></figure>
+        <figure style="margin:0"><div style="position:relative;aspect-ratio:938/687;background:#f2f2f2;overflow:hidden"><img src="uploads/152.jpg" alt="be healthy! – Cover" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div></figure>
+        <figure style="margin:0"><div style="position:relative;aspect-ratio:938/687;background:#f2f2f2;overflow:hidden"><img src="uploads/153.jpg" alt="be healthy! – Titelthema „Frühling in Sicht“" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div></figure>
+        <figure style="margin:0"><div style="position:relative;aspect-ratio:938/687;background:#f2f2f2;overflow:hidden"><img src="uploads/160.jpg" alt="be healthy! – „Nie mehr am Rad drehen“" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div></figure>
+        <figure style="margin:0"><div style="position:relative;aspect-ratio:938/687;background:#f2f2f2;overflow:hidden"><img src="uploads/164.jpg" alt="be healthy! – „Besser streiten“" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div></figure>
+    </div>
+      </article>
+      <!-- ARCHIV: <article id="siemens-roentgen" data-screen-label="Siemens Healthineers" style="display:flex;flex-direction:column;gap:16px;scroll-margin-top:84px">
+        <div style="font-size:13px;text-transform:uppercase;letter-spacing:.08em;font-weight:500">Key Visual</div>
+        <h3 style="margin:0;font-size:21px;font-weight:500;text-transform:uppercase">Siemens Healthineers<span style="display:block;margin-top:4px;font-size:clamp(17px,1.5vw,20px);text-transform:none">Röntgen</span></h3>
+        <div style="min-width:0;margin-top:8px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(8px,1.2vw,16px)">
+      <div style="grid-column:1 / -1;position:relative;aspect-ratio:3/2;background:#000"><img src="img/roentgen.jpg" alt="Siemens Healthineers – Röntgen" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block"></div>
+        <figure style="margin:0;display:flex;flex-direction:column;gap:6px"><div style="position:relative;aspect-ratio:16/9;background:#f2f2f2;overflow:hidden"><img src="https://images.squarespace-cdn.com/content/v1/678754ee60247c27436b953d/06087342-1724-4ad5-84f7-a59f0885a2d6/Siemens_Roentgen_Identity5.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div></figure>
+        <figure style="margin:0;display:flex;flex-direction:column;gap:6px"><div style="position:relative;aspect-ratio:16/9;background:#f2f2f2;overflow:hidden"><img src="https://images.squarespace-cdn.com/content/v1/678754ee60247c27436b953d/c251a866-3903-443c-b771-416a06e3b1f6/Siemens_Roentgen_Identity6.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div></figure>
+                <figure style="grid-column:1 / -1;margin:0;display:flex;flex-direction:column;gap:10px"><div ref="{{ seRx }}" style="display:flex;overflow:hidden;scroll-snap-type:x mandatory;scroll-behavior:smooth"><div style="flex:0 0 100%;scroll-snap-align:start;position:relative;aspect-ratio:16/9;background:#000"><img src="img/roentgen-125-logo-hoch.png" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div><div style="flex:0 0 100%;scroll-snap-align:start;position:relative;aspect-ratio:16/9;background:#000"><img src="img/roentgen-125-logo-quer.png" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div><div style="flex:0 0 100%;scroll-snap-align:start;position:relative;aspect-ratio:16/9;background:#000"><img src="https://images.squarespace-cdn.com/content/v1/678754ee60247c27436b953d/5e1c867d-59be-4a0e-aade-017cc08c8cb5/News-Stories_2020-06_Dossier_125-Jahre-Roentgen_CT_8406_CC_NS_DE_1800000007335812.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div><div style="flex:0 0 100%;scroll-snap-align:start;position:relative;aspect-ratio:16/9;background:#000"><img src="https://images.squarespace-cdn.com/content/v1/678754ee60247c27436b953d/d6b26b8b-3181-4894-b20f-1794b44ce70d/News-Stories_2020-01_Dossier-125_125-Jahre-Roentgen_8406_CC_NS_Header_DE_1800000007090525.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div></div></figure>
+    </div>
+      </article> -->
+      <article id="siemens-energy" data-screen-label="Siemens Energy" style="display:flex;flex-direction:column;gap:16px;scroll-margin-top:84px">
+        <div style="font-size:13px;text-transform:uppercase;letter-spacing:.08em;font-weight:500">Corporate Magazin + Content-Formate</div>
+        <h3 style="margin:0;font-size:21px;font-weight:500;text-transform:uppercase">Siemens Energy<span style="display:block;margin-top:4px;font-size:clamp(17px,1.5vw,20px);text-transform:none">Digital Storytelling</span></h3>
+        <div style="min-width:0;margin-top:8px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(8px,1.2vw,16px)">
+        <div style="grid-column:1 / -1;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(8px,1.2vw,16px)"><figure style="margin:0"><div style="position:relative;aspect-ratio:16/9;background:#000;overflow:hidden"><video autoplay="{{ true }}" muted="{{ true }}" loop="{{ true }}" playsinline="{{ true }}" src="img/se-video-1.mp4" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></video></div></figure><figure style="margin:0"><div style="position:relative;aspect-ratio:16/9;background:#000;overflow:hidden"><video autoplay="{{ true }}" muted="{{ true }}" loop="{{ true }}" playsinline="{{ true }}" src="img/se-video-2.mp4" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></video></div></figure></div>
+        <div style="grid-column:1 / -1;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(8px,1.2vw,16px)"><figure style="margin:0"><div style="position:relative;aspect-ratio:1250/916;background:#8f22e6;overflow:hidden"><img src="img/se-cover.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div></figure><figure style="margin:0"><div style="position:relative;aspect-ratio:1250/916;background:#8f22e6;overflow:hidden"><img src="img/se-spread-1.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div></figure><figure style="margin:0"><div style="position:relative;aspect-ratio:1250/916;background:#8f22e6;overflow:hidden"><img src="img/se-spread-2.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div></figure><figure style="margin:0"><div style="position:relative;aspect-ratio:1250/916;background:#8f22e6;overflow:hidden"><img src="img/se-spread-3.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div></figure></div>
+        <figure style="margin:0;display:flex;flex-direction:column;gap:10px;min-width:0"><div ref="{{ seSlider }}" style="display:flex;overflow:hidden;scroll-snap-type:x mandatory;scroll-behavior:smooth"><div style="flex:0 0 100%;scroll-snap-align:start;position:relative;aspect-ratio:16/9;background:#000"><img src="img/se-5ways-1.png" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div><div style="flex:0 0 100%;scroll-snap-align:start;position:relative;aspect-ratio:16/9;background:#000"><img src="img/se-5ways-2.png" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div><div style="flex:0 0 100%;scroll-snap-align:start;position:relative;aspect-ratio:16/9;background:#000"><img src="img/se-5ways-3.png" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div><div style="flex:0 0 100%;scroll-snap-align:start;position:relative;aspect-ratio:16/9;background:#000"><img src="img/se-5ways-4.png" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div></div></figure>
+        <figure style="margin:0;display:flex;flex-direction:column;gap:6px"><div style="position:relative;aspect-ratio:16/9;background:#009c54;overflow:hidden"><img src="img/se-methanol-hub.png" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div></figure>
+        <div style="grid-column:1 / -1;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(8px,1.2vw,16px)">
+        <figure style="margin:0;display:flex;flex-direction:column;gap:6px"><div style="position:relative;aspect-ratio:1/1;background:#fff;overflow:hidden"><img src="img/se-anim-1.gif" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;display:block"></div></figure>
+        <figure style="margin:0;display:flex;flex-direction:column;gap:6px"><div style="position:relative;aspect-ratio:1/1;background:#fff;overflow:hidden"><img src="img/se-anim-2.gif" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;display:block"></div></figure>
+        <figure style="margin:0;display:flex;flex-direction:column;gap:6px"><div style="position:relative;aspect-ratio:1/1;background:#fff;overflow:hidden"><img src="img/se-anim-3.gif" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;display:block"></div></figure>
+        <figure style="margin:0;display:flex;flex-direction:column;gap:6px"><div style="position:relative;aspect-ratio:1/1;background:#fff;overflow:hidden"><img src="img/se-anim-4.gif" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;display:block"></div></figure>
+        </div>
+    </div>
+      </article>
+      <article id="fit-vital-plus" data-screen-label="fit &amp; vital plus" style="display:flex;flex-direction:column;gap:16px;scroll-margin-top:84px">
+        <div style="font-size:13px;text-transform:uppercase;letter-spacing:.08em;font-weight:500">Magazin</div>
+        <h3 style="margin:0;font-size:21px;font-weight:500;text-transform:uppercase">fit &amp; vital plus<span style="display:block;margin-top:4px;font-size:clamp(17px,1.5vw,20px);text-transform:none">Das Magazin für moderne Gesundheitsdienstleistungen</span></h3>
+        <div style="min-width:0;margin-top:8px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(8px,1.2vw,16px)">
+      <div style="grid-column:1 / -1;position:relative;aspect-ratio:4/3;background:#003f50"><img src="img-web/img/fv-3.webp" alt="fit &amp; vital plus – Cover Nr. 1 | 04/2024 – „Mehr Mut!“" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div>
+        <figure style="margin:0"><div style="position:relative;aspect-ratio:4/3;background:#003f50;overflow:hidden"><img src="img-web/img/fv-2.webp" alt="fit &amp; vital plus – Cover Nr. 2 | 08/2024 – „Starker Rücken“" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div></figure>
+        <figure style="margin:0"><div style="position:relative;aspect-ratio:4/3;background:#003f50;overflow:hidden"><img src="img-web/img/fv-4.webp" alt="fit &amp; vital plus – Cover Nr. 2 | 06/2025 – „Wieder frei atmen“" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div></figure>
+        <figure style="margin:0"><div style="position:relative;aspect-ratio:4/3;background:#003f50;overflow:hidden"><img src="img-web/img/fv-5.webp" alt="fit &amp; vital plus – „Starker Rücken“" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div></figure>
+        <figure style="margin:0"><div style="position:relative;aspect-ratio:4/3;background:#003f50;overflow:hidden"><img src="img-web/img/fv-6.webp" alt="fit &amp; vital plus – „Bewegtes Leben“" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div></figure>
+        <figure style="margin:0"><div style="position:relative;aspect-ratio:4/3;background:#003f50;overflow:hidden"><img src="img-web/img/fv-7.webp" alt="fit &amp; vital plus – „Arthrose im Daumen“" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div></figure>
+        <figure style="margin:0"><div style="position:relative;aspect-ratio:4/3;background:#003f50;overflow:hidden"><img src="img-web/img/fv-8.webp" alt="fit &amp; vital plus – „Zeh auf Abwegen“" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div></figure>
+        <figure style="margin:0"><div style="position:relative;aspect-ratio:4/3;background:#003f50;overflow:hidden"><img src="img-web/img/fv-9.webp" alt="fit &amp; vital plus – „Widerspruch einlegen“" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div></figure>
+        <figure style="margin:0"><div style="position:relative;aspect-ratio:4/3;background:#003f50;overflow:hidden"><img src="img-web/img/fv-1.webp" alt="fit &amp; vital plus – „Gut ins Rollen kommen“" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div></figure>
+    </div>
+      </article>
+    </div>
+  </div>
+</section>
+<footer id="kontakt" data-screen-label="11 Kontakt" style="background:#000;color:#fff;padding:clamp(64px,10vw,140px) clamp(20px,4vw,40px) 32px">
+  <div style="max-width:1280px;margin:0 auto;display:flex;flex-direction:column;gap:clamp(40px,6vw,80px)">
+    <div style="display:flex;flex-direction:column;gap:28px">
+      <div style="font-size:13px;text-transform:uppercase;letter-spacing:.08em;font-weight:500">Kontakt</div>
+      <a href="https://calendly.com/dominikschwarzdesign/30min" data-reveal="" style="color:#fff;font-size:clamp(36px,6.4vw,104px);line-height:.9;font-weight:500;letter-spacing:-.03em;text-transform:uppercase;text-decoration:none;text-wrap:balance" style-hover="color:#edff71;text-decoration:none" onMouseEnter="{{ smileOn2 }}" onMouseLeave="{{ smileOff2 }}">Laden Sie mich direkt zum Gespräch ein&nbsp;{{ smile2 }}&nbsp;→</a>
+      <div style="display:flex;flex-wrap:wrap;gap:12px">
+        <a href="mailto:ds@dominikschwarz.eu" style="background:#fff;color:#000;border-radius:999px;padding:12px 22px;font-weight:500;text-decoration:none" style-hover="background:#edff71;color:#000;text-decoration:none">E-Mail schreiben</a>
+        <a href="assets/Dominik_Schwarz_CV.pdf" download="" data-archived="" style="display:none;color:#fff;border:1px solid #fff;border-radius:999px;padding:12px 22px;font-weight:500;text-decoration:none" style-hover="background:#fff;color:#000;text-decoration:none">CV herunterladen (PDF)</a>
+        <a href="https://www.linkedin.com/in/dominik-schwarz-96069541/" style="color:#fff;border:1px solid #fff;border-radius:999px;padding:12px 22px;font-weight:500;text-decoration:none" style-hover="background:#fff;color:#000;text-decoration:none">LinkedIn</a>
+      </div>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;border-top:1px solid #fff;padding-top:16px;font-size:14px">
+      <a href="mailto:ds@dominikschwarz.eu" style="color:#fff;display:inline-block;padding:12px 0">ds@dominikschwarz.eu</a>
+      <span>Dominik Schwarz – Stories to Design</span>
+    </div>
+  </div>
+</footer>
+</main>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;ansicht&quot;: {&quot;editor&quot;: &quot;enum&quot;, &quot;options&quot;: [&quot;Desktop&quot;, &quot;Tablet&quot;, &quot;Mobil&quot;], &quot;default&quot;: &quot;Desktop&quot;, &quot;tsType&quot;: &quot;string&quot;, &quot;section&quot;: &quot;Ansicht&quot;, &quot;label&quot;: &quot;Gerät&quot;}, &quot;farbmodus&quot;: {&quot;editor&quot;: &quot;enum&quot;, &quot;options&quot;: [&quot;Hell&quot;, &quot;Dunkel&quot;], &quot;default&quot;: &quot;Hell&quot;, &quot;tsType&quot;: &quot;string&quot;, &quot;section&quot;: &quot;Ansicht&quot;, &quot;label&quot;: &quot;Farbmodus&quot;}}">
+class Component extends DCLogic {
+  state = { wide: true };
+  applyTweaks() {
+    const q = new URLSearchParams(location.search), emb = q.get('embed') === '1';
+    const t = q.get('theme') || ((this.props.farbmodus ?? 'Hell') === 'Dunkel' ? 'dunkel' : 'hell');
+    document.documentElement.dataset.theme = t;
+    document.documentElement.style.overflow = (!emb && (this.props.ansicht ?? 'Desktop') !== 'Desktop') ? 'hidden' : '';
+  }
+  tweakVals() {
+    const an = this.props.ansicht ?? 'Desktop', mob = an === 'Mobil';
+    const emb = new URLSearchParams(location.search).get('embed') === '1';
+    return { devFrame: !emb && an !== 'Desktop', devW: mob ? '390px' : '834px', devH: mob ? '844px' : '1112px',
+      devLabel: mob ? 'Mobil · 390 × 844' : 'Tablet · 834 × 1112',
+      devSrc: encodeURI("portfolio.html") + '?embed=1&theme=' + ((this.props.farbmodus ?? 'Hell') === 'Dunkel' ? 'dunkel' : 'hell') };
+  }
+  componentDidUpdate() { this.applyTweaks(); }
+  componentDidMount() {
+    this.applyTweaks();
+    this.seAuto = setInterval(() => { const now = Date.now(); if (!this.seMagT || now - this.seMagT > 8000) this.seStep(1, this.seMag); if (!this.seSlT || now - this.seSlT > 8000) this.seStep(1, this.seSlider); }, 3500);
+    this.playVids = () => document.querySelectorAll('video').forEach(v => {
+      v.muted = true; v.defaultMuted = true; v.loop = true; v.autoplay = true; v.playsInline = true;
+      v.setAttribute('muted', ''); v.setAttribute('playsinline', '');
+      if (v.paused) v.play().catch(() => {});
+    });
+    this.playVids();
+    this.vidTimer = setTimeout(this.playVids, 800);
+    this.vidObs = new MutationObserver(() => this.playVids());
+    this.vidObs.observe(document.body, { childList: true, subtree: true });
+    this.mq = matchMedia('(min-width: 820px)');
+    this.onMq = () => this.setState({ wide: this.mq.matches });
+    this.onMq(); this.mq.addEventListener('change', this.onMq);
+    this.onSpy = () => {
+      const links = Array.from(document.querySelectorAll('#projekte nav a[href^="#"]'));
+      if (!links.length) return;
+      const line = innerHeight * 0.4; let act = null;
+      links.forEach(l => { const el = document.getElementById(l.getAttribute('href').slice(1)); if (el && el.getBoundingClientRect().top <= line) act = l; });
+      links.forEach(l => { const on = l === act; l.style.color = on ? '#0022ff' : '#000'; const d = l.querySelector('span'); if (d) d.style.background = on ? '#0022ff' : '#000'; });
+    };
+    document.addEventListener('scroll', this.onSpy, { capture: true, passive: true });
+    window.addEventListener('resize', this.onSpy);
+    setTimeout(this.onSpy, 300);
+  }
+  componentWillUnmount() { clearInterval(this.seAuto); this.mq.removeEventListener('change', this.onMq); document.removeEventListener('scroll', this.onSpy, true); window.removeEventListener('resize', this.onSpy); }
+  seSlider = React.createRef();
+  seMag = React.createRef();
+  seRx = React.createRef();
+  seStep(d, r) { const el = (r || this.seSlider).current; if (!el) return; const w = el.clientWidth; const n = Math.round(el.scrollLeft / w) + d; const max = el.children.length - 1; el.scrollTo({ left: (n < 0 ? max : n > max ? 0 : n) * w, behavior: 'smooth' }); }
+  renderVals() { const w = typeof matchMedia === 'function' ? matchMedia('(min-width: 820px)').matches : this.state.wide; const s = this.state; return { ...this.tweakVals(), seRx: this.seRx, seMag: this.seMag, seMagPrev: () => { this.seMagT = Date.now(); this.seStep(-1, this.seMag); }, seMagNext: () => { this.seMagT = Date.now(); this.seStep(1, this.seMag); }, seSlider: this.seSlider, sePrev: () => { this.seSlT = Date.now(); this.seStep(-1); }, seNext: () => { this.seSlT = Date.now(); this.seStep(1); }, wide: w, narrow: !w, stickyPos: w ? 'sticky' : 'static', smile1: s.h1 ? '👍' : '🙂', smile2: s.h2 ? '👍' : '🙂', smileOn1: () => this.setState({ h1: true }), smileOff1: () => this.setState({ h1: false }), smileOn2: () => this.setState({ h2: true }), smileOff2: () => this.setState({ h2: false }) }; }
+}
+</script>
+</body>
+</html>

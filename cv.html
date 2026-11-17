@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>CV – Dominik Schwarz – Stories to Design</title>
+<script src="./image-slot.js"></script>
+<style>
+@font-face{font-family:"Akzidenz Grotesk BE";src:url("assets/fonts/AkzidenzGroteskBE-Regular.otf") format("opentype");font-weight:400;font-display:swap}
+@font-face{font-family:"Akzidenz Grotesk BE";src:url("assets/fonts/AkzidenzGroteskBE-Medium.ttf") format("truetype");font-weight:500;font-display:swap}
+@font-face{font-family:"Larish Neue";src:url("assets/fonts/LarishNeueSemibold-Regular.otf") format("opentype");font-weight:600;font-display:swap}
+@font-face{font-family:"Akzidenz Grotesk BE";src:url("assets/fonts/AkzidenzGroteskBE-Bold.otf") format("opentype");font-weight:700;font-display:swap}
+html{scroll-behavior:smooth;scroll-padding-top:108px}
+body{margin:0;background:#fff;color:#000;font-family:'Akzidenz Grotesk BE',Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+a{color:#0022ff;text-decoration:none}
+a:hover{color:#0022ff;text-decoration:underline}
+ul{margin:0;padding-left:1.1em}
+li+li{margin-top:10px}
+@keyframes wink{0%,70%,100%{transform:rotate(0) scale(1)}76%{transform:rotate(-14deg) scale(1.15)}82%{transform:rotate(10deg) scale(1.15)}88%{transform:rotate(-6deg) scale(1.05)}94%{transform:rotate(0) scale(1)}}
+@media (max-width:760px){[data-wig-row]{grid-template-columns:minmax(0,1fr) 88px!important;row-gap:6px!important}[data-wig-row]>:nth-child(1){grid-column:1;grid-row:1}[data-wig-row]>:nth-child(2){display:none}[data-wig-row]>:nth-child(3){grid-column:1;grid-row:2}[data-wig-row]>:nth-child(4){grid-column:2;grid-row:1 / span 2}[data-wig-row]:not([data-reveal]){display:none!important}[data-wig-row][data-reveal]>:nth-child(1)::before{content:"Vorher";display:block;font-size:12px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;margin-bottom:2px}[data-wig-row][data-reveal]>:nth-child(3)::before{content:"Nachher";display:block;font-size:12px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;margin:8px 0 2px;color:#edff71}}
+</style>
+<style>[data-burger]>summary{list-style:none}[data-burger]>summary::-webkit-details-marker{display:none}[data-burger] [data-bl]{display:block;width:22px;height:2px;background:#fff;transition:transform .25s,opacity .2s}[data-burger][open] [data-bl]:nth-child(1){transform:translateY(7px) rotate(45deg)}[data-burger][open] [data-bl]:nth-child(2){opacity:0}[data-burger][open] [data-bl]:nth-child(3){transform:translateY(-7px) rotate(-45deg)}</style>
+<script>document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('[data-burger] nav a');if(a){var d=a.closest('details');if(d)d.open=false}})</script>
+</helmet>
+<div aria-hidden="true" style="height:60px"></div>
+<header data-screen-label="00 Header" style="position:fixed;top:0;left:0;right:0;z-index:50;background:#000;color:#fff">
+  <div style="max-width:calc(1280px + 2 * clamp(20px,4vw,40px));margin:0 auto;display:flex;align-items:center;gap:24px;padding:12px clamp(20px,4vw,40px);height:60px">
+    <a href="start.html#top" style="display:flex;align-items:center;flex-shrink:0;min-height:44px"><img src="assets/logo-white.svg" alt="Dominik Schwarz – Stories to Design" style="height:28px;width:auto;display:block"></a>
+    <nav style="flex:1;display:flex;justify-content:flex-end;gap:24px;font-size:14px">
+      <sc-if value="{{ wide }}" hint-placeholder-val="{{ true }}">
+        <a href="start.html#top" style="color:#fff" style-hover="color:#edff71;text-decoration:underline;text-underline-offset:.2em">Über mich</a>
+        
+        <a href="cv.html" aria-current="page" style="color:#edff71;font-weight:500">Vita</a>
+        <a href="portfolio.html" style="color:#fff" style-hover="color:#edff71;text-decoration:underline;text-underline-offset:.2em">Portfolio</a>
+      </sc-if>
+    </nav>
+    <a href="https://calendly.com/dominikschwarzdesign/30min" style="flex-shrink:0;background:#fff;color:#000;border-radius:999px;padding:12px 18px;font-weight:500;font-size:14px;line-height:1.2;text-decoration:none" style-hover="background:#0022ff;color:#fff">Kontakt</a>
+  <sc-if value="{{ narrow }}" hint-placeholder-val="{{ false }}"><details data-burger="" style="flex-shrink:0;margin-right:-10px"><summary aria-label="Menü" style="cursor:pointer;width:44px;height:44px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px"><span data-bl=""></span><span data-bl=""></span><span data-bl=""></span></summary><nav style="position:fixed;top:60px;left:0;right:0;bottom:0;background:#000;display:flex;flex-direction:column;padding:8px clamp(20px,4vw,40px) 40px;border-top:1px solid #333;overflow-y:auto"><a href="start.html#top" style="color:#fff;text-decoration:none;padding:18px 0;border-bottom:1px solid #333;font-size:clamp(28px,8vw,40px);font-weight:500;letter-spacing:-.02em;text-transform:uppercase;line-height:1" style-hover="color:#edff71;text-decoration:underline;text-underline-offset:.2em">Über mich</a><a href="cv.html" aria-current="page" style="color:#edff71;text-decoration:none;padding:18px 0;border-bottom:1px solid #333;font-size:clamp(28px,8vw,40px);font-weight:500;letter-spacing:-.02em;text-transform:uppercase;line-height:1">Vita</a><a href="portfolio.html" style="color:#fff;text-decoration:none;padding:18px 0;border-bottom:1px solid #333;font-size:clamp(28px,8vw,40px);font-weight:500;letter-spacing:-.02em;text-transform:uppercase;line-height:1" style-hover="color:#edff71;text-decoration:underline;text-underline-offset:.2em">Portfolio</a></nav></details></sc-if>
+  </div>
+  <div data-progress="" style="position:absolute;left:0;bottom:0;height:3px;width:100%;background:#0022ff;transform:scaleX(0);transform-origin:0 50%"></div>
+</header>
+<main lang="de" style="font-size:clamp(15px,1.1vw,17px);line-height:1.45;padding-top:clamp(32px,5vw,64px)">
+<!-- ANSATZ -->
+<section id="ansatz" data-screen-label="01b Ansatz" style="background:#0022ff;color:#fff;margin-top:-64px;padding:calc(64px + clamp(64px,9vw,128px)) clamp(20px,4vw,40px) clamp(64px,9vw,128px)">
+  <div style="max-width:1280px;margin:0 auto;display:flex;flex-direction:column;gap:clamp(32px,4vw,56px)">
+    <div style="border-top:1px solid #fff;padding-top:20px;display:flex;flex-direction:column;gap:16px">
+      <div style="font-size:13px;text-transform:uppercase;letter-spacing:.08em;font-weight:500">Mein Ansatz</div>
+      <h2 style="margin:0;font-size:clamp(32px,4.4vw,64px);line-height:1;font-weight:500;letter-spacing:-.02em;text-transform:uppercase;text-wrap:balance">Forschung verständlich und Programme sichtbar kommunizieren</h2>
+    </div>
+    <div style="display:flex;flex-direction:column">
+      <div data-wig-row="" style="display:grid;grid-template-columns:minmax(0,1fr) 2.5em minmax(0,1fr) clamp(64px,7vw,104px);gap:12px;padding-bottom:10px"><span style="font-size:13px;text-transform:uppercase;letter-spacing:.08em;font-weight:500">Vorher</span><span></span><span style="font-size:13px;text-transform:uppercase;letter-spacing:.08em;font-weight:500">Nachher</span></div>
+      <div data-reveal="0" data-wig-row="" style="display:grid;grid-template-columns:minmax(0,1fr) 2.5em minmax(0,1fr) clamp(64px,7vw,104px);gap:12px;align-items:baseline;border-top:1px solid #fff;padding:12px 0"><span style="font-size:clamp(16px,1.3vw,19px);line-height:1.3;text-wrap:pretty"><strong style="font-weight:700;margin-right:.5em;color:#fff">1</strong>Wissen in Köpfen und Mails</span><span aria-hidden="true" style="font-family:'Larish Neue',Georgia,serif;font-weight:600;font-size:clamp(18px,1.6vw,24px);color:#edff71">→</span><span style="font-size:clamp(16px,1.3vw,19px);line-height:1.3;font-weight:600;text-wrap:pretty">Projektgedächtnis über Förderperioden und Personalwechsel hinweg<span style="display:block;font-weight:400;margin-top:2px;font-size:15px">KI-Agenten, Gemini Gems, Claude Skills, Custom GPTs</span></span><span data-wig-thumb="" aria-hidden="true" onMouseEnter="{{ hovIn6 }}" onMouseMove="{{ hovMove }}" onMouseLeave="{{ hovOut }}" style="cursor:zoom-in;align-self:start;aspect-ratio:16/9;border-radius:6px;overflow:hidden;background:#f2f2f2;display:block;border:1px solid #fff;box-sizing:border-box"><img src="img/zertifikat-ki-agenten.png" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block"></span></div>
+      <div data-reveal="100" data-wig-row="" style="display:grid;grid-template-columns:minmax(0,1fr) 2.5em minmax(0,1fr) clamp(64px,7vw,104px);gap:12px;align-items:baseline;border-top:1px solid #fff;padding:12px 0"><span style="font-size:clamp(16px,1.3vw,19px);line-height:1.3;text-wrap:pretty"><strong style="font-weight:700;margin-right:.5em;color:#fff">2</strong>Statischer Style Guide</span><span aria-hidden="true" style="font-family:'Larish Neue',Georgia,serif;font-weight:600;font-size:clamp(18px,1.6vw,24px);color:#edff71">→</span><span style="font-size:clamp(16px,1.3vw,19px);line-height:1.3;font-weight:600;text-wrap:pretty">Anwendbares Designsystem für Institute, Projekte und Programme<span style="display:block;font-weight:400;margin-top:2px;font-size:15px">Claude Design, Canva Brand Kit</span></span><span data-wig-thumb="" aria-hidden="true" onMouseEnter="{{ hovIn1 }}" onMouseMove="{{ hovMove }}" onMouseLeave="{{ hovOut }}" style="cursor:zoom-in;align-self:start;aspect-ratio:16/9;border-radius:6px;overflow:hidden;background:#f2f2f2;display:block;border:1px solid #fff;box-sizing:border-box"><img src="img/deep-dive-claude-design.jpg" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"></span></div>
+      <div data-reveal="200" data-wig-row="" style="display:grid;grid-template-columns:minmax(0,1fr) 2.5em minmax(0,1fr) clamp(64px,7vw,104px);gap:12px;align-items:baseline;border-top:1px solid #fff;padding:12px 0"><span style="font-size:clamp(16px,1.3vw,19px);line-height:1.3;text-wrap:pretty"><strong style="font-weight:700;margin-right:.5em;color:#fff">3</strong>Einzelne Kommunikationsmittel</span><span aria-hidden="true" style="font-family:'Larish Neue',Georgia,serif;font-weight:600;font-size:clamp(18px,1.6vw,24px);color:#edff71">→</span><span style="font-size:clamp(16px,1.3vw,19px);line-height:1.3;font-weight:600;text-wrap:pretty">Eine Kerngeschichte pro Vorhaben, crossmedial aufbereitet für Fachpublikum, Politik, Förderer, Öffentlichkeit und Partner<span style="display:block;font-weight:400;margin-top:2px;font-size:15px">Figma Weave</span></span><span data-wig-thumb="" aria-hidden="true" onMouseEnter="{{ hovIn2 }}" onMouseMove="{{ hovMove }}" onMouseLeave="{{ hovOut }}" style="cursor:zoom-in;align-self:start;aspect-ratio:16/9;border-radius:6px;overflow:hidden;background:#f2f2f2;display:block;border:1px solid #fff;box-sizing:border-box"><img src="img/deep-dive-figma-weave.jpg" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"></span></div>
+      <div data-reveal="300" data-wig-row="" style="display:grid;grid-template-columns:minmax(0,1fr) 2.5em minmax(0,1fr) clamp(64px,7vw,104px);gap:12px;align-items:baseline;border-top:1px solid #fff;padding:12px 0"><span style="font-size:clamp(16px,1.3vw,19px);line-height:1.3;text-wrap:pretty"><strong style="font-weight:700;margin-right:.5em;color:#fff">4</strong>Nur Designer können gestalten, nur Entwickler können coden</span><span aria-hidden="true" style="font-family:'Larish Neue',Georgia,serif;font-weight:600;font-size:clamp(18px,1.6vw,24px);color:#edff71">→</span><span style="font-size:clamp(16px,1.3vw,19px);line-height:1.3;font-weight:600;text-wrap:pretty">Auch Forschende und Verwaltung arbeiten im Corporate Design, Projektseiten und Prototypen entstehen per Vibe Coding<span style="display:block;font-weight:400;margin-top:2px;font-size:15px">Claude Design, Canva: Vorlagen für Präsentationen, Poster und Projektseiten</span></span><span data-wig-thumb="" aria-hidden="true" onMouseEnter="{{ hovIn4 }}" onMouseMove="{{ hovMove }}" onMouseLeave="{{ hovOut }}" style="cursor:zoom-in;align-self:start;aspect-ratio:16/9;border-radius:6px;overflow:hidden;background:#f2f2f2;display:block;position:relative;border:1px solid #fff;box-sizing:border-box"><img src="img/mm-lp-desktop-poster.png" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top center;display:block"><video poster="img/mm-lp-desktop-poster.png" src="img/mm-lp-desktop.mp4#t=1" muted="{{ true }}" autoplay="{{ true }}" loop="{{ true }}" playsinline="{{ true }}" preload="metadata" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top center;display:block"></video></span></div>
+      <div data-reveal="500" data-wig-row="" style="display:grid;grid-template-columns:minmax(0,1fr) 2.5em minmax(0,1fr) clamp(64px,7vw,104px);gap:12px;align-items:baseline;border-top:1px solid #fff;padding:12px 0"><span style="font-size:clamp(16px,1.3vw,19px);line-height:1.3;text-wrap:pretty"><strong style="font-weight:700;margin-right:.5em;color:#fff">5</strong>Manuelle, repetitive Arbeiten</span><span aria-hidden="true" style="font-family:'Larish Neue',Georgia,serif;font-weight:600;font-size:clamp(18px,1.6vw,24px);color:#edff71">→</span><span style="font-size:clamp(16px,1.3vw,19px);line-height:1.3;font-weight:600;text-wrap:pretty">Methoden, um Automatisierungspotenziale zu analysieren und zu priorisieren<span style="display:block;font-weight:400;margin-top:2px;font-size:15px">n8n, Make, Zapier</span></span><span data-wig-thumb="" aria-hidden="true" onMouseEnter="{{ hovIn5 }}" onMouseMove="{{ hovMove }}" onMouseLeave="{{ hovOut }}" style="cursor:zoom-in;align-self:start;aspect-ratio:16/9;border-radius:6px;overflow:hidden;background:#f2f2f2;display:block;border:1px solid #fff;box-sizing:border-box"><img src="img/zertifikat-automatisierung.jpg" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"></span></div>
+    </div>
+    <div ref="{{ hovRef }}" aria-hidden="true" style="position:fixed;left:0;top:0;z-index:50;width:clamp(260px,26vw,400px);background:#fff;color:#000;border:2px solid #000;box-sizing:border-box;border-radius:12px;overflow:hidden;pointer-events:none;opacity:{{ hovOpacity }};transition:opacity .2s ease;will-change:transform"><div style="overflow:hidden;border-bottom:1px solid #000"><sc-if value="{{ hovIsImg }}" hint-placeholder-val="{{ false }}"><img data-res-src="{{ hovSrc }}" alt="" style="width:100%;height:auto;max-height:65vh;object-fit:contain;display:block"></sc-if><sc-if value="{{ hovIsVid }}" hint-placeholder-val="{{ false }}"><video src="img/mm-lp-desktop.mp4" muted="{{ true }}" autoplay="{{ true }}" loop="{{ true }}" playsinline="{{ true }}" style="width:100%;height:auto;display:block"></video></sc-if></div><div style="padding:10px 14px 12px;font-size:14px;line-height:1.35;text-wrap:pretty">{{ hovCap }}</div></div>
+    
+  </div>
+</section>
+<section id="werdegang" data-screen-label="09 Werdegang" style="padding:clamp(32px,4vw,64px) clamp(20px,4vw,40px) clamp(64px,8vw,120px)">
+  <div style="max-width:1280px;margin:0 auto;display:flex;flex-wrap:wrap;gap:32px clamp(32px,5vw,80px);align-items:flex-start">
+    <div style="flex:1 1 280px;position:{{ stickyPos }};top:84px;display:flex;flex-direction:column;gap:24px;border-top:1px solid #000;padding-top:20px">
+      <div style="font-size:13px;text-transform:uppercase;letter-spacing:.08em;font-weight:500">Werdegang</div>
+      <h2 style="margin:0;font-size:clamp(28px,4.4vw,60px);line-height:.95;hyphens:manual;-webkit-hyphens:manual;overflow-wrap:normal;word-break:keep-all;font-weight:500;letter-spacing:-.015em;text-transform:uppercase;text-wrap:balance">CV</h2>
+      <nav style="display:flex;flex-direction:column;border-top:1px solid #000;max-width:360px">
+        <a href="#cv-beruf" style="color:#000;display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid #000;font-size:14px;font-weight:500;text-transform:uppercase;text-decoration:none" style-hover="color:#0022ff;text-decoration:none"><span style="width:10px;height:10px;border-radius:50%;background:#000"></span>Berufserfahrung</a>
+        <a href="#cv-ausbildung" style="color:#000;display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid #000;font-size:14px;font-weight:500;text-transform:uppercase;text-decoration:none" style-hover="color:#0022ff;text-decoration:none"><span style="width:10px;height:10px;border-radius:50%;background:#000"></span>Ausbildung</a>
+        <a href="#cv-lehre" style="color:#000;display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid #000;font-size:14px;font-weight:500;text-transform:uppercase;text-decoration:none" style-hover="color:#0022ff;text-decoration:none"><span style="width:10px;height:10px;border-radius:50%;background:#000"></span>Lehre, Workshops und Veranstaltungen</a>
+        <a href="#cv-zertifikate" style="color:#000;display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid #000;font-size:14px;font-weight:500;text-transform:uppercase;text-decoration:none" style-hover="color:#0022ff;text-decoration:none"><span style="width:10px;height:10px;border-radius:50%;background:#000"></span>Zertifikate</a>
+      </nav>
+    </div>
+
+    <div style="flex:2 1 520px;min-width:0;border-top:1px solid #000;padding-top:20px">
+      <div id="cv-beruf" style="display:flex;flex-direction:column;scroll-margin-top:84px"><h3 style="margin:-4px 0 8px;font-size:21px;line-height:1;font-weight:500;text-transform:uppercase">Berufserfahrung</h3>
+        <div style="display:flex;flex-wrap:wrap;gap:12px 32px;padding:20px 0;border-bottom:1px solid #000">
+          <div style="flex:1 1 160px;font-weight:700">2024 – heute</div>
+          <div style="flex:3 1 340px;display:flex;flex-direction:column;gap:16px">
+            <div style="font-weight:700;text-transform:uppercase">disruptive, München · Freiberuflich</div>
+            <div><div style="font-weight:700">Art Director + KI-Consultant</div><ul><li>Vorträge, Workshops, E-Learning-Konzepte, Brand Design</li></ul></div>
+          </div>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:12px 32px;padding:20px 0;border-bottom:1px solid #000">
+          <div style="flex:1 1 160px;font-weight:700">2021 – 2025</div>
+          <div style="flex:3 1 340px;display:flex;flex-direction:column;gap:16px">
+            <div style="font-weight:700;text-transform:uppercase">Wort &amp; Bild Verlagsgruppe<br>Isartal Health Media, München</div>
+            <div><div style="font-weight:700">Head of Product</div><ul><li>Innovations- und Digitalisierungskonzepte für Gesundheits-Content, Brand-Design-Projekte für Verlagsgruppe und Beteiligungen</li><li>Führung interdisziplinärer Teams (10 Personen)</li><li>Steuerung von Agenturen, Stakeholder-Management</li><li>Entwicklung KI-gestützter Visuals und Produktionsprozesse</li><li>Konzeption des internen Dialogformats „KI-Circle“, Organisation und Planung der internen Veranstaltung „KI als Sparringspartner“ (2024)</li></ul></div>
+            <div><div style="font-weight:700">Art Director</div><ul><li>Leitung Design-Team (5 Personen)</li><li>Buchreihen, digitales Storytelling, Magazine, Podcasts und Social-Media-Formate für komplexe Gesundheitsthemen</li><li>Fokus auf crossmediale Designsysteme statt Einzellösungen</li></ul></div>
+          </div>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:12px 32px;padding:20px 0;border-bottom:1px solid #000">
+          <div style="flex:1 1 160px;font-weight:700">2019 – 2021</div>
+          <div style="flex:3 1 340px;display:flex;flex-direction:column;gap:16px">
+            <div style="font-weight:700;text-transform:uppercase">Independent Medien-Design, München</div>
+            <div><div style="font-weight:700">Brand Designer + Art Director</div><ul><li>Content-Formate für das Brand Storytelling von Siemens Energy und Siemens Healthineers</li><li>Projektleitung für den Gräfe und Unzer Autorenverlag</li><li>Cover, Buchreihen und Style Guides für die Gräfe und Unzer Verlagsgruppe als Lead-Agentur</li></ul></div>
+          </div>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:12px 32px;padding:20px 0;border-bottom:1px solid #000">
+          <div style="flex:1 1 160px;font-weight:700">2010 – heute</div>
+          <div style="flex:3 1 340px;display:flex;flex-direction:column;gap:16px">
+            <div style="font-weight:700;text-transform:uppercase">Dominik Schwarz – Stories to Design, München</div>
+            <div><div style="font-weight:700">Brand Designer, Art Director + KI-Consultant</div><ul><li>Kunden: Auer Weber Architekten, Berufsverband Bildender Künstler, disruptive, HarperCollins, Hubert Burda Media, Panoorama Design, Primafila Correspondents, Scala, Süddeutsche Zeitung (Auswahl)</li></ul></div>
+          </div>
+        </div>
+      </div>
+      <div id="cv-ausbildung" style="display:flex;flex-direction:column;scroll-margin-top:84px;margin-top:clamp(48px,6vw,88px)"><h3 style="margin:0 0 8px;font-size:21px;font-weight:500;text-transform:uppercase">Ausbildung</h3>
+        <div style="display:flex;flex-wrap:wrap;gap:8px 32px;padding:20px 0;border-bottom:1px solid #000"><div style="flex:1 1 160px;font-weight:700">2018</div><div style="flex:3 1 340px"><div style="font-weight:700;text-transform:uppercase">Design Thinking und Innovationsmethoden</div><div>THNK School of Creative Leadership (Executive Program), Amsterdam</div></div></div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px 32px;padding:20px 0;border-bottom:1px solid #000"><div style="flex:1 1 160px;font-weight:700">2009 – 2010</div><div style="flex:3 1 340px"><div style="font-weight:700;text-transform:uppercase">Wirtschaftsförderung + Landesentwicklung</div><div>DesignLabor Bremerhaven (Stipendium)</div></div></div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px 32px;padding:20px 0;border-bottom:1px solid #000"><div style="flex:1 1 160px;font-weight:700">2005 – 2009</div><div style="flex:3 1 340px"><div style="font-weight:700;text-transform:uppercase">Bachelor of Arts in Design</div><div>Freie Universität Bozen, Italien<br>Goldsmiths College, London (Austausch)</div></div></div>
+      </div>
+      <div id="cv-lehre" style="display:flex;flex-direction:column;scroll-margin-top:84px;margin-top:clamp(48px,6vw,88px)"><h3 style="margin:0 0 8px;font-size:21px;font-weight:500;text-transform:uppercase">Lehre, Workshops und Veranstaltungen</h3>
+        <div style="display:flex;flex-wrap:wrap;gap:12px 32px;padding:20px 0;border-bottom:1px solid #000"><div style="flex:1 1 160px;font-weight:700">2025 – 2026</div><div style="flex:3 1 340px;display:flex;flex-direction:column;gap:16px"><div style="font-weight:700;text-transform:uppercase">disruptive KI-Akademie, München</div><div><div style="font-weight:700">Workshops</div><ul><li>Figma Weave: Creative Deep Dive | Konzept, Präsentation und Facilitation</li><li>Claude Design: Creative Deep Dive | Konzept, Präsentation und Facilitation</li></ul></div><div><div style="font-weight:700">E-Learning-Konzepte</div><ul><li>Canva und KI mit Lernmodulen und Übungen, Skript und Skriptassistent GPT, Hero-Images, Assets und Infografiken</li><li>Vortrag: KI Lunch Session, Best of Content Marketing</li></ul></div></div></div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px 32px;padding:20px 0;border-bottom:1px solid #000"><div style="flex:1 1 160px;font-weight:700">2015 – 2018</div><div style="flex:3 1 340px"><div style="font-weight:700;text-transform:uppercase">EU Business School, München · Lehrauftrag</div><ul><li>Introduction to the World of Design</li><li>Graphic Design and Corporate Identity</li></ul></div></div>
+      </div>
+      <div id="cv-zertifikate" style="display:flex;flex-direction:column;scroll-margin-top:84px;margin-top:clamp(48px,6vw,88px)"><h3 style="margin:0 0 8px;font-size:21px;font-weight:500;text-transform:uppercase">Zertifikate</h3>
+        <div style="display:flex;flex-wrap:wrap;gap:8px 32px;padding:20px 0;border-bottom:1px solid #000"><div style="flex:1 1 160px;font-weight:700">2026</div><div style="flex:3 1 340px"><div style="font-weight:700;text-transform:uppercase">Prozessautomatisierung und KI-Integration mit Low-Code- und No-Code-Tools</div><div>Franklin Institute</div></div></div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px 32px;padding:20px 0;border-bottom:1px solid #000"><div style="flex:1 1 160px;font-weight:700">2025</div><div style="flex:3 1 340px"><div style="font-weight:700;text-transform:uppercase">KI-Workflow-Automatisierung: eigene Agenten bauen</div><div>Akademie der Bayerischen Presse</div></div></div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px 32px;padding:20px 0;border-bottom:1px solid #000"><div style="flex:1 1 160px;font-weight:700">2025</div><div style="flex:3 1 340px"><div style="font-weight:700;text-transform:uppercase">User Interface Design &amp; Visual Design</div><div>xdi</div></div></div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px 32px;padding:20px 0;border-bottom:1px solid #000"><div style="flex:1 1 160px;font-weight:700">2024</div><div style="flex:3 1 340px"><div style="font-weight:700;text-transform:uppercase">Videoproduktion mit KI</div><div>Akademie der Deutschen Medien</div></div></div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px 32px;padding:20px 0;border-bottom:1px solid #000"><div style="flex:1 1 160px;font-weight:700">2024</div><div style="flex:3 1 340px"><div style="font-weight:700;text-transform:uppercase">KI-Tools im beruflichen Umfeld einsetzen</div><div>disruptive</div></div></div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px 32px;padding:20px 0;border-bottom:1px solid #000"><div style="flex:1 1 160px;font-weight:700">2023</div><div style="flex:3 1 340px"><div style="font-weight:700;text-transform:uppercase">Professional Scrum Master I</div><div>Haufe Akademie</div></div></div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px 32px;padding:20px 0;border-bottom:1px solid #000"><div style="flex:1 1 160px;font-weight:700">2022</div><div style="flex:3 1 340px"><div style="font-weight:700;text-transform:uppercase">Storytelling for Influence</div><div>IDEO U</div></div></div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px 32px;padding:20px 0;border-bottom:1px solid #000"><div style="flex:1 1 160px;font-weight:700">2019</div><div style="flex:3 1 340px"><div style="font-weight:700;text-transform:uppercase">Trainer Markenentwicklung</div><div>Brand the Change</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TOOL STACK -->
+<div style="display:flex;justify-content:center;padding:0 clamp(20px,4vw,40px) clamp(48px,6vw,80px)"><a href="mailto:ds@dominikschwarz.eu?subject=Einladung%20zum%20Gespr%C3%A4ch" style="white-space:nowrap;display:flex;align-items:center;gap:10px;background:#000;color:#fff;border:2px solid #000;border-radius:999px;padding:12px 22px;font-weight:500;text-decoration:none" style-hover="background:#0022ff;border-color:#0022ff;color:#fff;text-decoration:none" style-active="background:#0022ff;border-color:#0022ff;color:#fff;text-decoration:none" onMouseEnter="{{ smileOn1 }}" onMouseLeave="{{ smileOff1 }}">→ Lassen Sie uns sprechen&nbsp;{{ smile1 }}</a></div>
+<section data-screen-label="10 Tool Stack" style="background:#edff71;padding:clamp(64px,8vw,120px) clamp(20px,4vw,40px)">
+  <div style="max-width:1280px;margin:0 auto;display:flex;flex-direction:column;gap:32px">
+    <div style="border-top:1px solid #000;padding-top:20px;display:flex;flex-direction:column;gap:16px">
+      <div style="font-size:13px;text-transform:uppercase;letter-spacing:.08em;font-weight:500">Werkzeuge</div>
+      <h2 style="margin:0;font-size:clamp(28px,4.4vw,60px);line-height:.95;hyphens:manual;-webkit-hyphens:manual;overflow-wrap:normal;word-break:keep-all;font-weight:500;letter-spacing:-.015em;text-transform:uppercase;text-wrap:balance">Tool Stack</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:32px">
+      <div style="border-top:1px solid #000;padding-top:14px"><div style="font-weight:700;text-transform:uppercase;margin-bottom:12px">Branding, Design + Content Creation</div><ul><li>Adobe InDesign, Illustrator, Photoshop</li><li>Canva</li></ul></div>
+      <div style="border-top:1px solid #000;padding-top:14px"><div style="font-weight:700;text-transform:uppercase;margin-bottom:12px">KI + Prozessautomatisierung</div><ul><li>Gemini, ChatGPT, Claude, NotebookLM</li><li>Adobe Firefly, Midjourney, Figma Weave</li><li>Make, n8n, Zapier</li></ul></div>
+      <div style="border-top:1px solid #000;padding-top:14px"><div style="font-weight:700;text-transform:uppercase;margin-bottom:12px">Projektmanagement</div><ul><li>Asana</li><li>Miro</li><li>Slack</li></ul></div>
+      <div style="border-top:1px solid #000;padding-top:14px"><div style="font-weight:700;text-transform:uppercase;margin-bottom:12px">Prototyping + Präsentation</div><ul><li>Claude Design</li><li>Figma</li></ul></div>
+    </div>
+  </div>
+</section>
+<section data-screen-label="08 Kunden" style="background:#0022ff;color:#fff;padding:clamp(64px,8vw,120px) 0 clamp(48px,6vw,80px);overflow:hidden">
+  <div style="max-width:1280px;margin:0 auto;padding:0 clamp(20px,4vw,40px);display:flex;flex-direction:column;gap:clamp(40px,5vw,64px)">
+    <div style="border-top:1px solid #fff;padding-top:20px;display:flex;flex-direction:column;gap:16px">
+      <div style="font-size:13px;text-transform:uppercase;letter-spacing:.08em;font-weight:500">Stimmen</div>
+      <h2 style="margin:0;font-size:clamp(28px,4.4vw,60px);line-height:.95;hyphens:manual;-webkit-hyphens:manual;overflow-wrap:normal;word-break:keep-all;font-weight:500;letter-spacing:-.015em;text-transform:uppercase;text-wrap:balance">Was andere sagen</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:56px clamp(32px,5vw,80px)">
+      <figure style="margin:0;display:flex;flex-direction:column;gap:20px">
+        <blockquote style="margin:0;font-size:clamp(19px,1.6vw,24px);line-height:1.25;text-wrap:pretty;font-weight:400">„Dominik verbindet strategisches Denken mit pragmatischer Umsetzung. Er denkt konsequent vom Nutzer aus und entwickelt Content-Strategien und KI-Workflows, die Mehrwert schaffen, ohne wissenschaftliche Qualität oder journalistische Sorgfalt zu kompromittieren.“</blockquote>
+        <figcaption style="margin-top:auto;border-top:1px solid #fff;padding-top:12px"><div style="font-weight:700;text-transform:uppercase">Julian Hörner</div><div>Projektmanager<br>Wort &amp; Bild Verlag</div></figcaption>
+      </figure>
+<figure style="margin:0;display:flex;flex-direction:column;gap:20px">
+        <blockquote style="margin:0;font-size:clamp(19px,1.6vw,24px);line-height:1.25;text-wrap:pretty;font-weight:400">„Dominik hat als Head of Product unser Markenportfolio stetig weiterentwickelt und das Designniveau im Gesundheitscontent konsequent hochgehalten. Er war Impulsgeber für das Design von digitalem Storytelling, Podcasts, Büchern und Magazinen und mein Sparringspartner für redaktionelle Prozesse.“</blockquote>
+        <figcaption style="margin-top:auto;border-top:1px solid #fff;padding-top:12px"><div style="font-weight:700;text-transform:uppercase">Beatrice Sobeck</div><div>Head of Content<br>Wort &amp; Bild Verlag</div></figcaption>
+      </figure>
+<figure style="margin:0;display:flex;flex-direction:column;gap:20px">
+        <blockquote style="margin:0;font-size:clamp(19px,1.6vw,24px);line-height:1.25;text-wrap:pretty;font-weight:400">„Dominik Schwarz besitzt ein ausgeprägtes kommunikatives Talent und eine sehr schnelle Auffassungsgabe. Als Designer überrascht er immer mit sehr originellen und intelligenten Ideen.“</blockquote>
+        <figcaption style="margin-top:auto;border-top:1px solid #fff;padding-top:12px"><div style="font-weight:700;text-transform:uppercase">Horst Moser</div><div>Unternehmensinhaber<br>Independent Medien-Design</div></figcaption>
+      </figure>
+<figure style="margin:0;display:flex;flex-direction:column;gap:20px">
+        <blockquote style="margin:0;font-size:clamp(19px,1.6vw,24px);line-height:1.25;text-wrap:pretty;font-weight:400">„Dominik Schwarz hat innerhalb kürzester Zeit Layout und Titel für dieses Buch entworfen. Buchstäblich in letzter Minute ist alles fertig geworden. Ohne seine Geduld und Ruhe wäre dies nicht möglich gewesen.“</blockquote>
+        <figcaption style="margin-top:auto;border-top:1px solid #fff;padding-top:12px"><div style="font-weight:700;text-transform:uppercase">Frederik Obermaier</div><div>Journalist und Pulitzer-Preisträger<br>Süddeutsche Zeitung Investigativ</div></figcaption>
+      </figure>
+    </div>
+  </div>
+  
+  </section>
+<footer id="kontakt" data-screen-label="11 Kontakt" style="background:#000;color:#fff;padding:clamp(64px,10vw,140px) clamp(20px,4vw,40px) 32px">
+  <div style="max-width:1280px;margin:0 auto;display:flex;flex-direction:column;gap:clamp(40px,6vw,80px)">
+    <div style="display:flex;flex-direction:column;gap:28px">
+      <div style="font-size:13px;text-transform:uppercase;letter-spacing:.08em;font-weight:500">Kontakt</div>
+      <a href="https://calendly.com/dominikschwarzdesign/30min" data-reveal="" style="color:#fff;font-size:clamp(36px,6.4vw,104px);line-height:.9;font-weight:500;letter-spacing:-.03em;text-transform:uppercase;text-decoration:none;text-wrap:balance" style-hover="color:#edff71;text-decoration:none" onMouseEnter="{{ smileOn2 }}" onMouseLeave="{{ smileOff2 }}">Laden Sie mich zum Gespräch ein&nbsp;{{ smile2 }}&nbsp;→</a>
+      <div style="display:flex;flex-wrap:wrap;gap:12px">
+        <a href="mailto:ds@dominikschwarz.eu" style="background:#fff;color:#000;border-radius:999px;padding:12px 22px;font-weight:500;white-space:nowrap;text-decoration:none" style-hover="background:#edff71;color:#000;text-decoration:none">E-Mail schreiben</a>
+        <a href="assets/Dominik_Schwarz_CV.pdf" download="" data-archived="" style="display:none;color:#fff;border:1px solid #fff;border-radius:999px;padding:12px 22px;font-weight:500;text-decoration:none" style-hover="background:#fff;color:#000;text-decoration:none">CV herunterladen (PDF)</a>
+        <a href="https://www.linkedin.com/in/dominik-schwarz-96069541/" style="color:#fff;border:1px solid #fff;border-radius:999px;padding:12px 22px;font-weight:500;white-space:nowrap;text-decoration:none" style-hover="background:#edff71;border-color:#edff71;color:#000;text-decoration:none">LinkedIn</a>
+      </div>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px;border-top:1px solid #fff;padding-top:16px;font-size:14px">
+      <a href="mailto:ds@dominikschwarz.eu" style="color:#fff;display:inline-block;padding:12px 0">ds@dominikschwarz.eu</a>
+      <span>Dominik Schwarz – Stories to Design</span>
+    </div>
+  </div>
+</footer>
+</main>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { tab: 0, wide: true };
+  componentDidMount() {
+    this.mq = matchMedia('(min-width: 820px)');
+    this.onMq = () => this.setState({ wide: this.mq.matches });
+    this.onMq(); this.mq.addEventListener('change', this.onMq);
+    this.onSpy = () => {
+      const links = Array.from(document.querySelectorAll('#werdegang nav a[href^="#"]'));
+      if (!links.length) return;
+      const line = innerHeight * 0.4; let act = null;
+      links.forEach(l => { const el = document.getElementById(l.getAttribute('href').slice(1)); if (el && el.getBoundingClientRect().top <= line) act = l; });
+      links.forEach(l => { const on = l === act; l.style.color = on ? '#0022ff' : '#000'; const d = l.querySelector('span'); if (d) d.style.background = on ? '#0022ff' : '#000'; });
+    };
+    document.addEventListener('scroll', this.onSpy, { capture: true, passive: true });
+    window.addEventListener('resize', this.onSpy);
+    setTimeout(this.onSpy, 300);
+  }
+  componentWillUnmount() { this.mq.removeEventListener('change', this.onMq); document.removeEventListener('scroll', this.onSpy, true); window.removeEventListener('resize', this.onSpy); }
+  hovIn(src) {
+    const th = !this._hovPre && document.querySelectorAll('[data-wig-thumb] img'); if (th && th.length) { this._hovPre = 1; th.forEach(i => { const m = new Image(); m.src = this.res(i.getAttribute('src')); }); }
+    this._hovFns = this._hovFns || {};
+    return this._hovFns[src] || (this._hovFns[src] = e => { if (matchMedia('(hover: none)').matches) return; this.hovMove(e); this.setState({ hov: src }); });
+  }
+  hovMove = e => {
+    const el = this.hovRef && this.hovRef.current; if (!el) return;
+    const w = el.offsetWidth, hh = el.offsetHeight;
+    let x = e.clientX + 24, y = e.clientY - hh / 2;
+    if (x + w > innerWidth - 12) x = e.clientX - w - 24;
+    y = Math.max(12, Math.min(innerHeight - hh - 12, y));
+    el.style.transform = `translate(${x}px,${y}px)`;
+  };
+  hovOut = () => this.setState({ hov: null });
+  renderVals() { const hv = this.state.hov; return { ...this._rv(), hovRef: this.hovRef || (this.hovRef = React.createRef()), hovOpacity: hv ? 1 : 0, hovSrc: hv && hv !== 'vid' ? hv : '', hovIsImg: !!hv && hv !== 'vid', hovIsVid: hv === 'vid', hovIn1: this.hovIn('img/deep-dive-claude-design.jpg'), hovIn2: this.hovIn('img/deep-dive-figma-weave.jpg'), hovIn4: this.hovIn('vid'), hovIn5: this.hovIn('img/zertifikat-automatisierung.jpg'), hovIn6: this.hovIn('img/zertifikat-ki-agenten.png'), hovMove: this.hovMove, hovOut: this.hovOut, hovCap: ({'img/deep-dive-claude-design.jpg':'Workshop „Claude Design Deep Dive“: konzipiert und gehalten für disruptive, München 2026','img/deep-dive-figma-weave.jpg':'Workshop „Figma Weave Deep Dive“: konzipiert und gehalten für disruptive, München 2026','vid':'Landingpage Mensch + Marke, per Vibe Coding mit Claude Design','img/zertifikat-ki-agenten.png':'Zertifikat „KI-Workflow-Automatisierung: Bau deine eigenen Agenten“, Akademie der Bayerischen Presse, 2025','img/zertifikat-automatisierung.jpg':'Zertifikat „Integration von Low Code & No Code Tools zur Automatisierung“, Franklin Institute, 2026'})[hv] || '' }; }
+  _rv() {
+    const t = this.state.tab, set = i => () => this.setState({ tab: i });
+    return { smile1: this.state.sm1 ? '👍' : '🙂', smileOn1: () => this.setState({ sm1: true }), smileOff1: () => this.setState({ sm1: false }), smile2: this.state.sm2 ? '👍' : '🙂', smileOn2: () => this.setState({ sm2: true }), smileOff2: () => this.setState({ sm2: false }),
+      wide: this.state.wide,
+      narrow: !this.state.wide,
+      stickyPos: this.state.wide ? 'sticky' : 'static',
+      tab0: t === 0, tab1: t === 1, tab2: t === 2,
+      setTab0: set(0), setTab1: set(1), setTab2: set(2),
+      dot0: t === 0 ? '#000' : 'transparent', dot1: t === 1 ? '#000' : 'transparent', dot2: t === 2 ? '#000' : 'transparent',
+      bg0: t === 0 ? '#0022ff' : 'transparent', fg0: t === 0 ? '#fff' : '#000', bd0: t === 0 ? '#0022ff' : '#000',
+      bg1: t === 1 ? '#0022ff' : 'transparent', fg1: t === 1 ? '#fff' : '#000', bd1: t === 1 ? '#0022ff' : '#000',
+      bg2: t === 2 ? '#0022ff' : 'transparent', fg2: t === 2 ? '#fff' : '#000', bd2: t === 2 ? '#0022ff' : '#000',
+    };
+  }
+
+}
+</script>
+</body>
+</html>
